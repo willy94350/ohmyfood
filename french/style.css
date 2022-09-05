@@ -1,0 +1,103 @@
+body{font-family:roboto;margin:0px;}
+
+header h1{font-family:"shrikhand";
+            margin-right:132px;
+    text-align:center;
+
+}
+
+.image img{
+        height: 466px;
+        object-fit: cover;
+        width: 100%;
+        top: 8px;
+        position: relative;
+    width:100%;}
+
+    .menu h1{font-family:"shrikhand";margin-left:29px;font-size: 30px;}
+
+    .titre_menu{display: flex;
+        justify-content:space-between;
+        border-radius:15px;
+        align-items:center;}
+
+        .entre{border-bottom:1px solid aqua;
+            margin-left:27px;
+            width:40px; }
+
+            .fa-regular.fa-heart{
+                font-weight: 145;
+                margin-right:13px;
+                font-size: 28px;
+            }
+
+            .fa-solid.fa-arrow-left{margin-top:1px;margin-left:26px;}
+
+            
+
+            .prix_ravioles{display:flex;margin-top:10px;}
+
+            .carte_ravioles{border-radius:15px;gap:1px;
+                width:394px;margin-bottom: 1px;
+                overflow: hidden;
+                padding-right:0px;margin-left:23px;
+                box-shadow:5px 5px 5px 5px grey;}
+
+            .sauce{margin-top:-4px;margin-left:10px;}
+
+            .ravioles{font-weight:bold;margin-left:9px;}
+
+            .prix_entre{display:flex;
+                flex-direction: row;
+                justify-content:space-between;
+                }
+
+            .entre_carte{gap:30px;display: flex;flex-direction: column;}
+
+            .commander button{
+                color: white;
+                font-weight: 300;
+                font-size: 20px;
+                margin-left:65px ;
+                padding: 10px 30px;
+                border-radius: 30px;
+                box-shadow: 2px 1px 16px -3px #000000;
+                margin-top: 40px;
+                height: 73px;
+                width: 300px;
+                border: none;
+                background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+            }
+
+            .pied {
+                background-color: #3f3232;
+                color: white;
+            }
+
+            .pied p{margin-left:29px;}
+
+            .titre_menu{ 
+                background-color:white;
+                border-radius: 33px;
+                position: relative;
+                z-index: 1;
+                margin-top: -26px;
+            }
+
+            .image{position:relative;}
+
+            .prix{margin-top:-2px;margin-right:19px;}
+
+            .fa-solid.fa-euro-sign{margin-top:-1px;margin-left:1px;}
+
+            .myfood{display:flex;align-items:center;justify-content: space-between;}
+
+            .bouton{background-color: aqua;  
+                margin-right:-42px;height:70px;}
+
+                .bouton:hover{margin-right:20px;transition:1s;}
+
+            
+
+
+            

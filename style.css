@@ -73,15 +73,15 @@ i.fas{margin-right:10px;}
 
   ol{list-style-type: none;}
 
-  .fonction span{padding-left:10px;flex-direction: row;align-items: center;
-	display:inline;justify-content:space-between;gap: 20px;}
+  
 
 	
 
 	.carte_menu{display:flex;
+		margin-left:8%;
 		gap:20px;flex-wrap: wrap;}
 
-		h2{margin-bottom: 24px;}
+		h2{margin-bottom: 24px;margin-left:8%;}
 
 		.carte img{height:124px;
 			width:100%;
@@ -90,7 +90,10 @@ i.fas{margin-right:10px;}
 
 		.carte{height:200px;
 			width:374px;
-			border-radius:15px 15px 0 0;
+			background-color:white;
+			border-radius:15px 15px 15px 15px;
+			text-decoration:none;
+
 			border:1px solid black;
 			position:relative;}
 
@@ -108,6 +111,8 @@ i.fas{margin-right:10px;}
 				justify-content: center;				
 
 			}
+
+			.ligne{text-decoration: none;}
 		
 			.coeur{display:flex;
 				flex-direction:row;
@@ -115,8 +120,38 @@ i.fas{margin-right:10px;}
 				justify-content: space-between;
 			}
 	
-			.pied{background-color: #070707;}
+			.pied{background-color:#3f3232;color:white}
 
 			.pied h1{font-family:shrikhand;}
 
+			.fork{display:flex;align-items:center;margin-bottom:1px;}
+
+			.hand{display:flex;align-items:center;}
+
+			.resto{
+				background-color: #e3e3e345;
+			}
+
+			.new{text-decoration: none;}
+
+			.titre_carte{font-weight:bold;color:black;margin-left:10px;}
+
+			.lieu_carte{color:black;margin-left: 10px;margin-top:-8%;}
+
+			.fa-regular.fa-heart{color:black;margin-right:5%;
+				font-size:25px;}
+
+			.number{
+				margin-left: 0%;
+				border: 1px solid black;
+				width: 2%;
+				position: relative;
+				top: 23%;
+			}
+
+			.fa-regular.fa-heart:hover{background-color:pink;}
+
+			.flex{display:flex;}
+
+			
 		
