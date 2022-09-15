@@ -1,11 +1,12 @@
 body{font-family:roboto;margin:0px;}
 
 header h1{font-family:"shrikhand";
-            margin-right:132px;
-    text-align:center;
-}
+    margin-left:14px;                    
+text-align:center; }
 
-.titre_page{margin-right:-1%;}
+header a {text-decoration: none;color: black;}
+
+
 
 .image img{
         height: 466px;
@@ -15,7 +16,11 @@ header h1{font-family:"shrikhand";
         position: relative;
     width:100%;}
 
-    .menu h1{font-family:"shrikhand";margin-left:29px;font-size: 30px;}
+    .menu h1{font-family:"shrikhand";
+        position: relative;
+        top:15px;
+        margin-left:29px;
+        font-size: 30px;}
 
     .titre_menu{display: flex;
         justify-content:space-between;
@@ -23,8 +28,11 @@ header h1{font-family:"shrikhand";
         align-items:center;}
 
         .entre{border-bottom:1px solid aqua;
+            margin-top:47px;
+            margin-bottom:19px;
             margin-left:27px;
             width:40px; }
+
 
             .fa-regular.fa-heart{
                 font-weight: 145;
@@ -32,8 +40,28 @@ header h1{font-family:"shrikhand";
                 font-size: 28px;
             }
 
-            .fa-solid.fa-arrow-left{margin-top:16px;
+        
+
+            .fa-solid.fa-heart{font-size:30px;
+                color:transparent;
+                background-clip:text;
+                -webkit-background-clip:text;
+                position:absolute;
+                right:29px;
+                top:32px;
+                opacity:0;
+                padding:10px;
+                background-image:linear-gradient(red,blue);}
+    
+          .fa-regular.fa-heart{color:black;font-size:30px;position:absolute;right:40px;top:42px;}
+    
+    
+            .fa-solid.fa-heart:hover{opacity:1;}
+    
+            .fa-solid.fa-arrow-left{margin-top:13px;
                 margin-left:26px;
+                font-size:22px ;
+                color: black;
                 position: absolute;}
 
                 .plats_carte{gap:30px;display:flex;flex-direction:column;}
@@ -71,7 +99,9 @@ header h1{font-family:"shrikhand";
     
             .prix{position:absolute;right:23px;bottom:-6px;}
     
-            .carte_ravioles:hover>.prix{margin-right:73px;transition:1s;}
+
+            .carte_ravioles:hover>.prix{margin-right:90px;transition:1s;}
+
 
                 .bouton{
                     background-color: aqua;
@@ -120,7 +150,7 @@ header h1{font-family:"shrikhand";
 
                 .carte_ravioles:hover .sauce{
                     text-overflow:ellipsis;
-                    width:250px;
+                    width:243px;
                     transition: 5s;
                     overflow: hidden;
                     white-space:nowrap;}
