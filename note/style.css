@@ -1,10 +1,11 @@
 body{font-family:roboto;margin:0px;}
 
 header h1{font-family:"shrikhand";
-            margin-right:132px;
+    margin-left:14px;
     text-align:center;
-
 }
+
+header a {text-decoration:none;color:black;}
 
 .image img{
         height: 466px;
@@ -14,7 +15,11 @@ header h1{font-family:"shrikhand";
         position: relative;
     width:100%;}
 
-    .menu h1{font-family:"shrikhand";margin-left:29px;font-size: 30px;}
+    .menu h1{font-family:"shrikhand";
+        position: relative;
+        top:15px;
+        margin-left:29px;
+        font-size: 30px;}
 
     .titre_menu{display: flex;
         justify-content:space-between;
@@ -22,37 +27,31 @@ header h1{font-family:"shrikhand";
         align-items:center;}
 
         .entre{border-bottom:1px solid aqua;
+            margin-top:47px;
+            margin-bottom:19px;
             margin-left:27px;
             width:40px; }
 
-            .fa-regular.fa-heart{
-                font-weight: 145;
-                margin-right:13px;
-                font-size: 28px;
-            }
 
-            .fa-solid.fa-arrow-left{margin-top:1px;
-                position:absolute ;
-                top:35px;
-                margin-left:26px;}
+    
+            .fa-regular.fa-heart{color: black;font-size:70px;}
 
-            .lien{text-decoration:none;color:black;}
+            .fa-solid.fa-arrow-left{margin-top:13px;
+                margin-left:26px;
+                font-size:22px ;
+                color: black;
+                position: absolute;}
 
             
 
-            .prix_ravioles{display:flex;margin-top:10px;}
-
-            .sauce{margin-top:-4px;margin-left:10px;}
+            .sauce{margin-top:-9px;margin-left:10px;}
 
             .ravioles{font-weight:bold;margin-left:9px;}
 
-            .prix_entre{display:flex;
-                flex-direction: row;
-                justify-content:space-between;
-                position: relative;
-                }
 
-            .entre_carte{gap:30px;display: flex;flex-direction: column;}
+            .entre_carte{gap:30px;display: flex;
+                margin-top:29px;
+                flex-direction: column;}
 
             .commander button{
                 color: white;
@@ -73,7 +72,7 @@ header h1{font-family:"shrikhand";
                 background-color: #3f3232;
                 color: white;
             }
-
+            
             .pied p{margin-left:29px;}
 
             .titre_menu{ 
@@ -86,34 +85,155 @@ header h1{font-family:"shrikhand";
 
             .image{position:relative;}
 
-            .prix{margin-top:31px;margin-right:19px;position:absolute;right:73%;}
+            
 
             .fa-solid.fa-euro-sign{margin-top:-1px;margin-left:1px;}
 
-            .myfood{display:flex;align-items:center;justify-content: space-between;}
 
             .carte_ravioles{border-radius:15px;gap:1px;
-                display:flex;justify-content: space-between;
-                overflow: hidden;
+                display: flex;justify-content:space-between;
+                overflow: hidden;position: relative;
                 width:394px;margin-bottom: 1px;
                 padding-right:0px;margin-left:23px;
-                box-shadow:5px 5px 5px 5px grey;}
+                height:71px;
+                box-shadow:5px 5px 5px 5px ;}
 
-            .carte_ravioles:hover>.bouton{overflow:visible;margin-right:1px;
-                transition: 1s;position:relative;}
+
+       .carte_ravioles:hover .fa-solid.fa-check{transform:rotate(1turn);transition:2s;}
+
+       .carte_ravioles:hover .bouton{margin-right:0px;transition:1s;}
+
+       .plats_carte{gap:30px;display:flex;flex-direction:column;}
+
+       .dessert_carte{gap:30px;display:flex;flex-direction:column;}
+
+       .carte_ravioles .bouton{margin-top:0px;height:83px;border-radius:0 10px 10px 0;}
+
+       .bouton{
+        background-color: aqua;
+        width:24%;
+        height:78px;
+        margin-top: 1%;
+        margin-right:-96px;
+        z-index:1;
+}
+
+
+        .carte_ravioles:hover .sauce{
+           text-overflow:ellipsis;
+           width:243px;
+           transition: 5s;
+           overflow: hidden;
+             white-space:nowrap;}
+
+
+
+
+       .fa-solid.fa-check{margin-left:37%;
+        background-color:white;
+        color: #00ffff;
+        border-radius:50%;
+        padding:4%;
+        margin-top:25%;}
+
+        .prix{position:absolute;right:23px;bottom:-7px;}
+
+        .carte_ravioles:hover>.prix{margin-right:90px;transition:1s;}
+
+
+
+        .fa-solid.fa-heart{font-size:30px;
+            color:transparent;
+            background-clip:text;
+            -webkit-background-clip:text;
+            position:absolute;
+            right:29px;
+            top:32px;
+            opacity:0;
+            padding:10px;
+            background-image:linear-gradient(red,blue);}
+
+      .fa-regular.fa-heart{color:black;font-size:30px;position:absolute;right:40px;top:42px;}
+
+
+        .fa-solid.fa-heart:hover{opacity:1;}
+
+        @keyframes slidedown {
+            from {
+                transform:translateY(150px);
+                opacity:0;
+            }
+            to {
+                transform:translateY(20px);
+                opacity:1;
+            }
+
+        }
+
+        .entre_carte{transition:.5s;animation:slidedown 4s;}
+
+        .plats_carte{transition:.5s;animation:slidedown 4s;}
+
+        .dessert_carte{transition:.5s;animation:slidedown 4s;}
+
+        
+
+        
+
+       
+
+
+
+
+
+            
+                @media (min-width:1000px)
+                {
+                .entre_carte{display:flex;
+                
+                    flex-direction:row;}
+
+                    .plats_carte{display:flex;
+                    flex-direction:row;}
+
+                    .dessert_carte{display:flex;flex-direction:row;}
+
+                    .commander{
+                        display: flex;
+                        width:87%;
+                        padding-top:6%;
+                        padding-bottom:9%;
+                        justify-content:center;}
+
+                        .header h1{display:flex;
+                            justify-content:center;
+                            margin-left: 25px;
+                            flex-direction:row;}
+
+                        .commander button{width:70%;}
+
+                        .titre_page{display: flex;
+                            justify-content: center;
+                            margin-right:10%;
+                            flex-direction: row;}
+
+                        .pied{display: flex;
+                            flex-direction:row;
+                            align-items: center;
+                            padding-top:5%;
+                            padding-bottom:5%;
+                            justify-content:space-around;}
+                }
+                
+
+               
+                
                 
 
 
 
 
-            .bouton{
-                    background-color: aqua;
-                    width:24%;
-                    height:78px;
-                    margin-top: 1%;
-                    margin-right:-96px;
-            }
-
+            
             
                 
  
