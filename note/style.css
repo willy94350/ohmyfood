@@ -32,36 +32,27 @@ header h1{font-family:"shrikhand";
             }
 
             .fa-solid.fa-arrow-left{margin-top:1px;
-                position: absolute;
+                position:absolute ;
                 top:35px;
                 margin-left:26px;}
+
+            .lien{text-decoration:none;color:black;}
 
             
 
             .prix_ravioles{display:flex;margin-top:10px;}
-
-            .carte_ravioles{border-radius:15px;gap:1px;
-                width:394px;margin-bottom: 1px;
-        
-                padding-right:0px;margin-left:23px;
-                box-shadow:5px 5px 5px 5px grey;}
-
-            .carte_ravioles:hover>.bouton{
-                transform:rotate(1turn);
-                overflow: visible;}
-
 
             .sauce{margin-top:-4px;margin-left:10px;}
 
             .ravioles{font-weight:bold;margin-left:9px;}
 
             .prix_entre{display:flex;
-                flex-direction:row;
+                flex-direction: row;
                 justify-content:space-between;
+                position: relative;
                 }
 
-            .entre_carte{gap:30px;display:flex;flex-direction:column;}
-
+            .entre_carte{gap:30px;display: flex;flex-direction: column;}
 
             .commander button{
                 color: white;
@@ -95,16 +86,43 @@ header h1{font-family:"shrikhand";
 
             .image{position:relative;}
 
-            .prix{margin-top:-2px;margin-right:19px;}
+            .prix{margin-top:31px;margin-right:19px;position:absolute;right:73%;}
 
             .fa-solid.fa-euro-sign{margin-top:-1px;margin-left:1px;}
 
             .myfood{display:flex;align-items:center;justify-content: space-between;}
 
-            .bouton{background-color: aqua;  
-                margin-right:-42px;height:70px;}
+            .carte_ravioles{border-radius:15px;gap:1px;
+                display:flex;justify-content: space-between;
+                overflow: hidden;
+                width:394px;margin-bottom: 1px;
+                padding-right:0px;margin-left:23px;
+                box-shadow:5px 5px 5px 5px grey;}
 
-        
+            .carte_ravioles:hover>.bouton{overflow:visible;margin-right:1px;
+                transition: 1s;position:relative;}
+                
+
+
+
+
+            .bouton{
+                    background-color: aqua;
+                    width:24%;
+                    height:78px;
+                    margin-top: 1%;
+                    margin-right:-96px;
+            }
+
+            
+                
+ 
+            
+
+            
+
+                
+            
 
             
 

@@ -53,15 +53,31 @@ main .lieu {
 	background-image:linear-gradient(to top, rgba(147, 86, 220, 0.9),
          rgba(255, 121, 218, 0.9));}
 
+.bulle{
+	align-items: center;
+	display: flex;
+	border-radius:53%;
+	color:white;
+	background-color: purple;
+	justify-content: center;
+	height:27px;width:26px;
+	position:relative;
+	left:-33px;
+	bottom:0px;
+}
+
 .reserver button:hover{transform:scale(1.1);}
 
 li{background-color: #f6f6f6;
 	border-radius:20px;
 	padding:20px 20px;
 	flex-grow: 1;
+	width:281px;
+	display: flex;
+	justify-content: space-between;
 	box-shadow: 2px 1px 16px -3px #000000;
 }
-ol{display: flex;gap:15px}
+ol{display: flex;gap:15px;width:70%;}
 
 li:hover{transform: scale(1.02);}
 
@@ -69,7 +85,10 @@ li:hover{transform: scale(1.02);}
 .fonction ol{flex-direction: column;}}
 .fonction h2{margin-bottom:24px;}
 
-i.fas{margin-right:10px;}
+i.fas{margin-right:10px;
+	bottom:-15px;
+	margin-top:-11px;
+	position: relative;left:-22px;}
 
   ol{list-style-type: none;}
 
@@ -138,8 +157,25 @@ i.fas{margin-right:10px;}
 
 			.lieu_carte{color:black;margin-left: 10px;margin-top:-8%;}
 
-			.fa-regular.fa-heart{color:black;margin-right:5%;
-				font-size:25px;}
+			.fa-solid.fa-heart{font-size:30px;
+				color:transparent;
+				background-clip:text;
+				-webkit-background-clip:text;
+				position:absolute;
+				right:1px;
+				opacity:0;
+				padding:10px;
+				background-image:linear-gradient(red,blue);}
+	
+		  .fa-regular.fa-heart{color:black;font-size:30px;position:absolute;right:11px;}
+
+		  .fa-solid.fa-heart:hover{opacity:1;}
+	
+			
+
+
+
+
 
 			.number{
 				margin-left: 0%;
@@ -149,9 +185,11 @@ i.fas{margin-right:10px;}
 				top: 23%;
 			}
 
-			.fa-regular.fa-heart:hover{background-color:pink;}
+			
 
 			.flex{display:flex;}
+
+		
 
 			
 		
