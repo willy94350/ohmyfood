@@ -18,6 +18,22 @@ header {
 	position: relative;
 }
 
+header h1{margin-left:51px;}
+
+.fa-solid.fa-location-dot{font-size:17px;}
+
+
+
+
+.para_decou{margin-left:40px;}
+
+.para_explo{margin-top:3px;}
+
+.para_li{margin-right:76px;
+	font-weight: bold;
+	font-size:15px;}
+
+
 main .lieu {
 	background-color: #f3f3f3;
 	text-align: center;
@@ -30,6 +46,9 @@ main .lieu {
 
 .reserver {
 	text-align: center;
+	background-color:#d3d3d31f; 
+	padding-top:1px;
+	padding-bottom: 70px;
 }
 
 .reserver h2 {
@@ -41,14 +60,15 @@ main .lieu {
 
 .reserver button{
 	color:white;
-	font-weight: 300;
-	font-size: 20px;
+	font-weight: 246;
+	font-size: 16px;
 	padding:10px 30px;
 	border-radius: 30px;
 	box-shadow: 2px 1px 16px -3px #000000;
 	margin-top: 40px;
-	height: 73px;
-	width: 300px;
+	margin-left:47px ;
+	height:51px;
+	width: 243px;
 	border: none;
 	background-image:linear-gradient(to top, rgba(147, 86, 220, 0.9),
          rgba(255, 121, 218, 0.9));}
@@ -58,36 +78,61 @@ main .lieu {
 	display: flex;
 	border-radius:53%;
 	color:white;
-	background-color: purple;
+	background-color:#4c0080b8; 
 	justify-content: center;
 	height:27px;width:26px;
 	position:relative;
 	left:-33px;
-	bottom:0px;
+	bottom:-10px;
 }
 
 .reserver button:hover{transform:scale(1.1);}
 
 li{background-color: #f6f6f6;
 	border-radius:20px;
-	padding:20px 20px;
+	padding:8px 20px;
 	flex-grow: 1;
 	width:281px;
 	display: flex;
 	justify-content: space-between;
 	box-shadow: 2px 1px 16px -3px #000000;
 }
-ol{display: flex;gap:15px;width:70%;}
+
+
+.fas.fa-store{color:#800080b3;}
 
 li:hover{transform: scale(1.02);}
 
 @media (max-width:768px){
-.fonction ol{flex-direction: column;}}
-.fonction h2{margin-bottom:24px;}
+	ol {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		width: 200px;
+		margin-left: -33px;
+	}
 
-i.fas{margin-right:10px;
-	bottom:-15px;
+	.flex li{width:347px;}
+	
+
+.fas.fa-mobile-alt{margin-left:13px;}
+
+.para_li{margin-right:76px;
+	font-weight: bold;
+	font-size:15px;}
+
+
+
+
+
+}
+.fonction h2{margin-bottom:19px;margin-top:60px;}
+
+
+i.fas{margin-right:-2px;
+	bottom:-28px;
 	margin-top:-11px;
+	color:#58008091;
 	position: relative;left:-22px;}
 
   ol{list-style-type: none;}
@@ -97,7 +142,7 @@ i.fas{margin-right:10px;
 	
 
 	.carte_menu{display:flex;
-		margin-left:8%;
+		margin-left:34px;
 		gap:20px;flex-wrap: wrap;}
 
 		h2{margin-bottom: 24px;margin-left:8%;}
@@ -141,7 +186,9 @@ i.fas{margin-right:10px;
 	
 			.pied{background-color:#3f3232;color:white}
 
-			.pied h1{font-family:shrikhand;}
+			.pied h1{font-family:shrikhand;margin-left:10px;}
+
+			.pied p{margin-left:10px;}
 
 			.fork{display:flex;align-items:center;margin-bottom:1px;}
 
@@ -149,6 +196,7 @@ i.fas{margin-right:10px;
 
 			.resto{
 				background-color: #e3e3e345;
+				margin-top:53px;
 			}
 
 			.new{text-decoration: none;}
@@ -187,7 +235,54 @@ i.fas{margin-right:10px;
 
 			
 
-			.flex{display:flex;}
+			.flex{display:flex;margin-left:52px;}
+
+			@media (min-width:992px)
+			{
+				ol {
+					display: flex;
+					gap: 44px;
+					width: 100%;
+					margin-left: -33px;
+				}
+			
+
+				.reserver{display: flex;
+					justify-content: center;
+					align-items: center;
+					flex-direction: column;}
+
+					.reserver button{margin-left:92px;width:458px;}
+
+					.para_decou{margin-left:90px;}
+
+					.flex li{width:50px;}
+
+				.reserver h2{margin-left:76px;}
+
+				.titre{margin-left:31px;}
+
+				.fa-solid.fa-location-dot {
+					font-size: 17px;
+					position: relative;
+					left:-49px;
+				}
+
+				.button{width:150px;}
+
+				.carte{width:49%;}
+
+				.pied {
+					display: flex;
+					align-items: center;
+					gap: 96px;
+					justify-content: center;
+					margin-top: 5px;
+					margin-bottom: 4px;
+				
+				}
+
+			}
 
 		
 
