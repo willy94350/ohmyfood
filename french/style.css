@@ -1,4 +1,6 @@
+
 body{font-family:roboto;margin:0px;}
+
 
 header h1{font-family:"shrikhand";
     margin-left:14px;                    
@@ -73,15 +75,6 @@ header a {text-decoration: none;color: black;}
 
             .prix_ravioles{display:flex;margin-top:10px;}
 
-
-
-                .carte_ravioles{border-radius:15px;gap:1px;
-                    display: flex;justify-content:space-between;
-                    overflow: hidden;position: relative;
-                    width:394px;margin-bottom: 1px;
-                    height:74px ;
-                    padding-right:0px;margin-left:23px;
-                    box-shadow:5px 5px 5px 5px ;}
     
     
            .carte_ravioles:hover .fa-solid.fa-check{transform:rotate(1turn);transition:2s;}
@@ -170,7 +163,7 @@ header a {text-decoration: none;color: black;}
                 color: white;
                 font-weight: 300;
                 font-size: 20px;
-                margin-left:65px ;
+                margin-left:108px ;
                 padding: 10px 30px;
                 border-radius: 30px;
                 box-shadow: 2px 1px 16px -3px #000000;
@@ -204,9 +197,15 @@ header a {text-decoration: none;color: black;}
 
             .myfood{display:flex;align-items:center;justify-content: space-between;}
 
+            @media (min-width:1200px)
+            {
+                .prix{position:absolute;right:33px;bottom:-6px;}
+
+            }
+
             
 
-                @media (min-width:1000px)
+                @media (min-width:991px)
                 {
                 .entre_carte{display:flex;
                 
@@ -215,7 +214,92 @@ header a {text-decoration: none;color: black;}
                     .plats_carte{display: flex;
                     flex-direction:row;}
 
+                    .prix{position:absolute;right:8px;bottom:-6px;}
+
+                    .carte_ravioles:hover .bouton {
+                        margin-right: 0px;
+                        transition: 1s;
+                    }
+                    .fa-solid.fa-check {
+                        margin-left: 37%;
+                        background-color: white;
+                        color: #00ffff;
+                        border-radius: 50%;
+                        padding: 4%;
+                        margin-top: 33%;
+                    }
+
+                    .carte_ravioles:hover>.prix{margin-right:90px;transition:1s;}
+        
+                    .carte_ravioles:hover .sauce{
+                        text-overflow:ellipsis;
+                        width:141px;
+                        transition: 1s;
+                        overflow: hidden;
+                        white-space:nowrap;}
+
+                        .carte_ravioles:hover .ravioles{
+                            text-overflow:ellipsis;
+                            width:141px;
+                            transition: 5s;
+                            overflow: hidden;
+                            white-space:nowrap;}
+    
+                            
+
+                        .sauce{width:250px;font-size: 12px;}
+
+                        .bouton{
+                            background-color: aqua;
+                            width:24%;
+                            height:78px;
+                            margin-top: 1%;
+                            margin-right:-96px;
+                            z-index:1;
+                                         }
+
+                          .titre_page{  transform:scale(3,1); 
+                            -webkit-transform:scale(5,1);
+                         display:inline-block;margin-left:46px;}
+                        
+                         .menu h1 {
+                            font-family: "shrikhand";
+                            position: relative;
+                            top: 2px;
+                            margin-left: 29px;
+                            font-size: 30px;
+                        }
+
+                                    }
+
+                                    @media(min-Width:800px)(max-Width:1000px){
+                                        .fa-solid.fa-check {
+
+                                            margin-left: 37%;
+                                            background-color: white;
+                                            color: #00ffff;
+                                            border-radius: 50%;
+                                            padding: 4%;
+                                            margin-top: 33%;
+                                        }
+
+
+                                    }
+                                                
+        
+        
+
+
+
                     .dessert_carte{display:flex;flex-direction:row;}
+
+                    .carte_ravioles{border-radius:15px;gap:1px;
+                        display: flex;justify-content:space-between;
+                        overflow: hidden;position: relative;
+                        width:374px;margin-bottom: 1px;
+                        height:74px ;
+                        padding-right:0px;margin-left:23px;
+                        box-shadow:5px 5px 5px 5px ;}
 
                     .commander{
                         display: flex;
@@ -242,11 +326,114 @@ header a {text-decoration: none;color: black;}
                             padding-top:5%;
                             padding-bottom:5%;
                             justify-content:space-around;}
-                }
                 
-            
 
             
+                @media (min-width:769px) and (max-width:992px){
+
+                    .carte_ravioles{border-radius:15px;gap:1px;
+                        display: flex;justify-content:space-between;
+                        overflow: hidden;position: relative;
+                        width:90%;margin-bottom: 1px;
+                        height:74px ;
+                        background-color:lightgray;
+                        padding-right:0px;margin-left:36px;
+                        box-shadow:5px 5px 5px 5px ;}
+
+                        .bouton{
+                            background-color: aqua;
+                            width:10%;
+                            height:78px;
+                            margin-top: 1%;
+                            margin-right:-210px;
+                            z-index:1;
+                                         }
+                        .titre_page{  transform:scale(3,1); 
+                            -webkit-transform:scale(4,1);
+                            margin-left:373px;
+                            display:inline-block;justify-content: center;}
+
+                            .dessert_carte{display:flex;flex-direction:column;}
+
+                            .menu h1 {
+                                font-family: "shrikhand";
+                                position: relative;
+                                top: 2px;
+                                margin-left: 29px;
+                                font-size: 30px;
+                            }
+                            .fa-solid.fa-arrow-left {
+                                margin-top: 33px;
+                                margin-left: 26px;
+                                font-size: 22px;
+                                color: black;
+                                position: absolute;
+                            }
+                            .fa-solid.fa-check {
+                                margin-left: 37%;
+                                background-color: white;
+                                color: #00ffff;
+                                border-radius: 50%;
+                                padding: 4%;
+                                margin-top: 33%;
+                            }
+        
+                    }
+                
+                
+
+            
+
+                    @media (max-width:768px){
+                        .carte_ravioles{border-radius:15px;gap:1px;
+                            display: flex;justify-content:space-between;
+                            overflow: hidden;position: relative;
+                            width:374px;margin-bottom: 1px;
+                            height:74px ;
+                            padding-right:0px;margin-left:38px;
+                            box-shadow:5px 5px 5px 5px ;}
+
+                        .dessert_carte{display:flex;flex-direction:column;}
+            
+                        .carte_ravioles:hover .sauce {
+                            text-overflow: ellipsis;
+                            width: 220px;
+                            transition: 5s;
+                            overflow: hidden;
+                            white-space: nowrap;
+                        }
+
+                        .pied {
+                            display: flex;
+                            flex-direction:column;
+                            align-items:flex-start;
+                            padding-top: 5%;
+                            padding-bottom: 5%;
+                            justify-content: space-around;
+                        }
+                        .bouton{
+                            background-color: aqua;
+                            width:24%;
+                             position: relative;
+                            height:78px;
+                            margin-top: 1%;
+                            margin-right:-96px;
+                          }
+
+
+                        .commander button {
+                            width: 281px;
+                            margin-left: 74px;
+                        
+                        } }
+
+
+                    
+                    
+
+
+                    
+
 
 
             
