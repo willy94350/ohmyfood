@@ -26,18 +26,31 @@ header h1 {
 }
 
 .para_decou {
-	margin-left: 40px;
+	margin-left: 32px;
+    display: flex;
+    padding: 33px 57px 10px 69px;
+    align-items: center;
 }
+
 
 .para_explo {
 	margin-top: 3px;
 }
 
 .para_li {
-	margin-right: 76px;
+	margin-right: 0px;
 	font-weight: bold;
 	font-size: 15px;
+	padding:-1px 0px 9px 53px;
+	padding-left:39px;
 }
+
+
+.fas.fa-mobile-alt{position: absolute;top:34px;left:35px;}
+
+.fas.fa-list-ul{position: absolute;top:34px;left:35px}
+
+.fas.fa-store{position: absolute;top:34px;left:35px;}
 
 main .lieu {
 	background-color: #f3f3f3;
@@ -58,6 +71,8 @@ main .lieu {
 
 .reserver h2 {
 	margin-top: 27px;
+	padding:20px 119px 20px 95px;
+
 }
 .reserver p {
 	font-size: 17px;
@@ -67,13 +82,13 @@ main .lieu {
 	color: white;
 	font-weight: 246;
 	font-size: 16px;
-	padding: 10px 30px;
+	padding: 13px 30px;
 	border-radius: 30px;
 	box-shadow: 2px 1px 16px -3px #000000;
-	margin-top: 40px;
+	margin-top: 41px;
 	margin-left: 47px;
 	height: 51px;
-	width: 243px;
+	width: 252px;
 	border: none;
 	background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
 }
@@ -81,16 +96,19 @@ main .lieu {
 .bulle {
 	align-items: center;
 	display: flex;
-	border-radius: 53%;
+	border-radius: 50%;
 	color: white;
 	background-color: #4c0080b8;
 	justify-content: center;
 	height: 27px;
-	width: 26px;
-	position: relative;
-	left: -33px;
-	bottom: -10px;
+	width: 27px;
+	position: absolute;
+    left: -63px;
+    bottom: -30px;
+    transform: translate(50px, -50px);
 }
+
+
 
 .reserver button:hover {
 	transform: scale(1.1);
@@ -99,12 +117,14 @@ main .lieu {
 li {
 	background-color: #f6f6f6;
 	border-radius: 20px;
-	padding: 8px 20px;
+	padding: 7px 41px;
 	flex-grow: 1;
-	width: 281px;
+	gap:20px;
+	width:63%;
 	display: flex;
-	justify-content: space-between;
+	flex-direction: row;
 	box-shadow: 2px 1px 16px -3px #000000;
+	position: relative;
 }
 
 .fas.fa-store {
@@ -116,33 +136,29 @@ li:hover {
 }
 
 @media (max-width: 768px) {
-	ol {
+		.li{
 		display: flex;
 		flex-direction: column;
-		gap: 20px;
+		gap: 40px;
 		width: 200px;
 		margin-left: -33px;
+		justify-content: space-between;
 	}
 
 	.flex li {
-		width: 347px;
+	margin-bottom:20px;
 	}
 
-	.fas.fa-mobile-alt {
-		margin-left: 13px;
-	}
-
-	.para_li {
-		margin-right: 76px;
-		font-weight: bold;
-		font-size: 15px;
-	}
+	
 
 	.carte_menu {
 		display: flex;
 		margin-left: 34px;
 		gap: 20px;
-		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: space-between;
+
+
 	}
 
 	.carte {
@@ -151,10 +167,12 @@ li:hover {
 		background-color: white;
 		border-radius: 15px 15px 15px 15px;
 		text-decoration: none;
+		gap: 20px;
 		border: 1px solid black;
 		position: relative;
 	}
 }
+
 .fonction h2 {
 	margin-bottom: 19px;
 	margin-top: 60px;
@@ -171,6 +189,7 @@ i.fas {
 
 ol {
 	list-style-type: none;
+	gap:30px;
 }
 
 h2 {
@@ -290,11 +309,20 @@ h2 {
 
 
 @media (min-width: 992px) {
+	.titre_page{  transform:scale(3,1); 
+		-webkit-transform:scale(4,1);
+		margin-left:35px;
+		display:inline-block;justify-content: center;}
+
+	
+
+
 	ol {
 		display: flex;
 		gap: 44px;
 		width: 100%;
 		margin-left: -33px;
+		justify-content: space-between;
 	}
 
 	.reserver {
@@ -315,6 +343,9 @@ h2 {
 
 	.flex li {
 		width: 50px;
+		display: flex;
+		gap:30px;
+		justify-content: space-between;
 	}
 
 	.reserver h2 {
@@ -335,10 +366,7 @@ h2 {
 		width: 150px;
 	}
 
-	.carte {
-		width: 49%;
-	}
-
+	
 	.pied {
 		display: flex;
 		align-items: center;
@@ -356,7 +384,7 @@ h2 {
 
 	.carte {
 		height: 200px;
-		width:;
+		width:49%;
 		background-color: white;
 		border-radius: 15px 15px 15px 15px;
 		text-decoration: none;
@@ -366,11 +394,17 @@ h2 {
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
-	.flex {
+	.ol {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+		gap:20px;
 	}
+
+	.titre_page{  transform:scale(3,1); 
+		-webkit-transform:scale(4,1);
+		margin-left:35px;
+		display:inline-block;justify-content: center;}
 
 	.carte_menu {
 		display: flex;
@@ -388,4 +422,6 @@ h2 {
 		border: 1px solid black;
 		position: relative;
 	}
+
+	.flex li{gap:20px;display: flex;}
 }
