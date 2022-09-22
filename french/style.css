@@ -103,13 +103,7 @@ header a {text-decoration: none;color: black; }
                     z-index:1; }
         
                     
-                                .carte_ravioles:hover .sauce {
-                                    text-overflow: ellipsis;
-                                    width: 220px;
-                                    transition: 5s;
-                                    overflow: hidden;
-                                    white-space: nowrap;
-                                }
+                            
         
                                 .pied {
                                     display: flex;
@@ -239,90 +233,7 @@ header a {text-decoration: none;color: black; }
 
             .myfood{display:flex;align-items:center;justify-content: space-between;}
 
-
-                @media (min-width:992px)
-                {
-
-                    .carte_ravioles{border-radius:15px;gap:1px;
-                        display: flex;justify-content:space-between;
-                        overflow: hidden;position: relative;
-                        margin-bottom: 1px;
-                        margin-left:97px;
-                        height:74px ;
-                        padding-right:0px;
-                        box-shadow:5px 5px 5px 5px;}
-
-                        .prix{position:absolute;right:33px;bottom:-6px;}
-
-                .entre_carte{display:flex;
-                    flex-direction:row;}
-
-                    .plats_carte{display: flex;
-                    flex-direction:row;}
-
-                    .dessert_carte{display:flex;flex-direction:row;}
-
-                    .prix{position:absolute;right:8px;bottom:-6px;}
-
-                    .carte_ravioles:hover .bouton {
-                        margin-right: 0px;
-                        transition: 1s;
-                    }
-                    .fa-solid.fa-check {
-                        margin-left: 37%;
-                        background-color: white;
-                        color: #00ffff;
-                        border-radius: 50%;
-                        padding: 4%;
-                        margin-top: 33%;
-                    }
-
-                    .carte_ravioles:hover>.prix{margin-right:90px;transition:1s;}
-        
-                    .carte_ravioles:hover .sauce{
-                        text-overflow:ellipsis;
-                        width:141px;
-                        transition: 1s;
-                        overflow: hidden;
-                        white-space:nowrap;}
-
-                        .carte_ravioles:hover .ravioles{
-                            text-overflow:ellipsis;
-                            width:141px;
-                            transition: 5s;
-                            overflow: hidden;
-                            white-space:nowrap;}
-    
-                            
-
-                        .sauce{width:250px;font-size: 12px;}
-
-                        .bouton{
-                            background-color: #99E2D0;
-                            width:24%;
-                            height:78px;
-                            margin-top: 1%;
-                            margin-right:-96px;
-                            z-index:1;
-                                         }
-
-                          .titre_page{  transform:scale(3,1); 
-                            -webkit-transform:scale(5,1);
-                         display:inline-block;margin-left:46px;}
-                        
-                         .menu h1 {
-                            font-family: "shrikhand";
-                            position: relative;
-                            top: 2px;
-                            margin-left: 29px;
-                            font-size: 30px;
-                        }
-
-                                    }
-
-                        
-            
-                @media (min-width:768px)and (max-width:991px){
+                @media (min-width:768px)and (max-width:988px){
 
                     .carte_ravioles{border-radius:15px;gap:1px;
                         display: flex;justify-content:space-between;
@@ -377,7 +288,7 @@ header a {text-decoration: none;color: black; }
                                 color: #00ffff;
                                 border-radius: 50%;
                                 padding: 4%;
-                                margin-top: 33%;
+                                margin-top:33%;
                             }
 
                             .fa-solid.fa-check {
@@ -392,7 +303,275 @@ header a {text-decoration: none;color: black; }
 
         
                     }
+
+                    @media  (min-width:992px)
+                    {
+    
+                        .carte_ravioles{border-radius:15px;gap:1px;
+                            display: flex;justify-content:space-between;
+                            overflow: hidden;position: relative;
+                            width:90%;margin-bottom: 1px;
+                            height:74px ;
+                            padding-right:0px;margin-left:36px;
+                            box-shadow:5px 5px 5px 5px;}
+    
+                            .prix{position:absolute;right:33px;bottom:-6px;}
+    
+                    .entre_carte{display:flex;
+                        flex-direction:row;}
+    
+                        .plats_carte{display: flex;
+                        flex-direction:row;}
+    
+                        .dessert_carte{display:flex;flex-direction:row;}
+    
+                        .prix{position:absolute;right:8px;bottom:-6px;}
+    
+                        .carte_ravioles:hover .bouton {
+                            margin-right: 0px;
+                            transition: 1s;
+                        }
+                        .fa-solid.fa-check {
+                            margin-left: 37%;
+                            background-color: white;
+                            color: #00ffff;
+                            border-radius: 50%;
+                            padding: 4%;
+                            margin-top: 33%;
+                        }
+    
+                        .carte_ravioles:hover>.prix{margin-right:90px;transition:1s;}
+            
+                        .carte_ravioles:hover .sauce{
+                            text-overflow:ellipsis;
+                            width: 100px;
+                            transition: 1s;
+                            overflow: hidden;
+                            white-space:nowrap;}
+    
+                            .carte_ravioles .sauce{
+                                text-overflow:ellipsis;
+                                width:82px;
+                                transition: 1s;
+                                overflow: hidden;
+                                white-space:nowrap;}
+           
+    
+                            .carte_ravioles:hover .ravioles{
+                                text-overflow:ellipsis;
+                                width:141px;
+                                transition: 5s;
+                                overflow: hidden;
+                                white-space:nowrap;}
+    
+    
+                            .sauce{width:250px;font-size: 12px;}
+    
+                            .bouton{
+                                background-color: #99E2D0;
+                                width:24%;
+                                height:78px;
+                                margin-top: 1%;
+                                margin-right:-96px;
+                                z-index:1;
+                                             }
+    
+                              .titre_page{  transform:scale(3,1); 
+                                -webkit-transform:scale(5,1);
+                             display:inline-block;margin-left:46px;}
+                            
+                             .menu h1 {
+                                font-family: "shrikhand";
+                                position: relative;
+                                top: 2px;
+                                margin-left: 29px;
+                                font-size: 30px;
+                            }
+    
+                                        }
+                                    
+            @media (min-width:1460px){
+
                 
+                .carte_ravioles{border-radius:15px;gap:1px;
+                    display: flex;justify-content:space-between;
+                    overflow: hidden;position: relative;
+                    width:90%;margin-bottom: 1px;
+                    height:74px ;
+                    padding-right:0px;margin-left:36px;
+                    box-shadow:5px 5px 5px 5px;}
+
+                    .prix{position:absolute;right:33px;bottom:-6px;}
+
+            .entre_carte{display:flex;
+                flex-direction:row;}
+
+                .plats_carte{display: flex;
+                flex-direction:row;}
+
+                .dessert_carte{display:flex;flex-direction:row;}
+
+                .prix{position:absolute;right:13px;bottom:-6px;}
+
+                .carte_ravioles:hover .bouton {
+                    margin-right: 0px;
+                    transition: 2s;
+                }
+                .fa-solid.fa-check {
+                    margin-left: 37%;
+                    background-color: white;
+                    color: #00ffff;
+                    border-radius: 50%;
+                    padding: 4%;
+                    margin-top:25px;
+                }
+
+                .carte_ravioles:hover>.prix{margin-right:100px;transition:1s;}
+    
+                .carte_ravioles:hover .sauce{
+                    text-overflow:ellipsis;
+                    width:350px;
+                    transition: 1s;
+                    overflow: hidden;
+                    white-space:nowrap;}
+
+                    .carte_ravioles .sauce{
+                        text-overflow:ellipsis;
+                        width:250px;
+                        transition: 1s;
+                        overflow: hidden;
+                        white-space:nowrap;}
+
+                        .carte_ravioles:hover .ravioles{
+                            text-overflow:ellipsis;
+                            width:350px;
+                            transition: 5s;
+                            overflow: hidden;
+                            white-space:nowrap;}
+
+
+
+                    .sauce{width:250px;font-size: 12px;}
+
+                    .bouton{
+                        background-color: #99E2D0;
+                        width:70px;
+                        height:88px;
+                        margin-top: 1%;
+                        margin-right:-114px;
+                        z-index:1;
+                                     }
+
+            }
+
+            @media (min-width:990px) and (max-width:1300px){
+                .bouton{
+                    background-color: #99E2D0;
+                    width:24%;
+                    height:78px;
+                    margin-top: 1%;
+                    margin-right:-90px;
+                    z-index:1;}
+
+                    .carte_ravioles:hover .sauce{
+                        text-overflow:ellipsis;
+                        width:150px;
+                        transition: 1s;
+                        overflow: hidden;
+                        white-space:nowrap;}
+
+                        .carte_ravioles .sauce{
+                            text-overflow:ellipsis;
+                            width:220px;
+                            transition: 1s;
+                            overflow: hidden;
+                            white-space:nowrap;}
+
+                            .carte_ravioles:hover .ravioles{
+                                text-overflow:ellipsis;
+                                width:200px;
+                                transition: 1s;
+                                overflow: hidden;
+                                white-space:nowrap;}
+
+                  
+
+
+
+                }
+
+            @media (min-width:1280px) and (max-width:1600px){
+
+                .bouton{
+                    background-color: #99E2D0;
+                    width:80px;
+                    height:78px;
+                    margin-top: 1%;
+                    margin-right:-100px;
+                    z-index:1;}
+
+                    .carte_ravioles{border-radius:15px;gap:1px;
+                        display: flex;justify-content:space-between;
+                        overflow: hidden;position: relative;
+                        width:432px;margin-bottom: 1px;
+                        height:74px ;
+                        padding-right:0px;margin-left:36px;
+                        box-shadow:5px 5px 5px 5px;}
+
+                        .carte_ravioles:hover>.prix{margin-right:80px;transition:1s;}
+
+                        .carte_ravioles:hover .sauce{
+                            text-overflow:ellipsis;
+                            width:250px;
+                            transition: 1s;
+                            overflow: hidden;
+                            white-space:nowrap;}
+
+                            .carte_ravioles .sauce{
+                                width:250px;
+                                transition: 1s;
+                                overflow: hidden;
+                                white-space:nowrap;}
+    
+
+                            .carte_ravioles:hover .ravioles{
+                                text-overflow:ellipsis;
+                                width:250px;
+                                transition: 1s;
+                                overflow: hidden;
+                                white-space:nowrap;}
+
+            }
+
+            @media (min-width:1250px) and (max-width:1400px){
+
+                .bouton{
+                    background-color: #99E2D0;
+                    width:100px;
+                    height:78px;
+                    margin-top: 1%;
+                    margin-right:-100px;
+                    z-index:1;}
+
+                    .carte_ravioles:hover .bouton {
+                        margin-right:-10px;
+                        transition: 1s;}
+
+                        .fa-solid.fa-check {
+                            margin-left: 37%;
+                            background-color: white;
+                            color: #00ffff;
+                            border-radius: 50%;
+                            padding: 4%;
+                            margin-top:25px;
+                        }
+
+                        .carte_ravioles:hover>.prix{margin-right:100px;transition:1s;}
+
+
+            }
+                
+            
                 
 
             
