@@ -533,7 +533,7 @@ header a {text-decoration: none;color: black; }
 
                         .carte_ravioles:hover .sauce{
                             text-overflow:ellipsis;
-                            width:250px;
+                            width:200px;
                             transition: 1s;
                             overflow: hidden;
                             white-space:nowrap;}
