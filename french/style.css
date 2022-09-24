@@ -1,297 +1,377 @@
-
-body{font-family:roboto;margin:0px;}
-
-
-header h1{font-family:"shrikhand";
-    margin-left:14px;                    
-text-align:center; }
-
-header a {text-decoration: none;color: black; }
-
-.image img{
-        height: 466px;
-        object-fit: cover;
-        width: 100%;
-        top: 8px;
-        position: relative;
-    width:100%;}
-
-    .menu h1{font-family:"shrikhand";
-        position: relative;
-        top:-1px;
-        margin-left:29px;
-        font-size: 30px;}
-
-    .titre_menu{display: flex;
-        justify-content:space-between;
-        border-radius:15px;
-        align-items:center;}
-
-        .entre{border-bottom:1px solid aqua;
-            margin-top:47px;
-            margin-bottom:19px;
-            margin-left:27px;
-            width:40px; }
-
-
-            .fa-regular.fa-heart{
-                font-weight: 145;
-                margin-right:13px;
-                font-size: 28px;
-            }
-
-        
-
-            .fa-solid.fa-heart{font-size:30px;
-                color:transparent;
-                background-clip:text;
-                -webkit-background-clip:text;
-                position:absolute;
-                right:29px;
-                top:32px;
-                opacity:0;
-                padding:10px;
-                background-image:linear-gradient(red,blue);}
-    
-          .fa-regular.fa-heart{color:black;font-size:30px;position:absolute;right:40px;top:42px;}
-    
-    
-            .fa-solid.fa-heart:hover{opacity:1;}
-    
-            .fa-solid.fa-arrow-left{margin-top:13px;
-                margin-left:26px;
-                font-size:22px ;
-                color: black;
-                position: absolute;}
-
-                .plats_carte{gap:30px;display:flex;flex-direction:column;}
-
-                .dessert_carte{gap:30px;display:flex;flex-direction:column;}
-
-       .entre_carte{gap:30px;display: flex;flex-direction: column;}
-
-
-            .prix_ravioles{display:flex;margin-top:10px;}
-
-    
-    
-           .carte_ravioles:hover .fa-solid.fa-check{transform:rotate(1turn);transition:2s;}
-    
-           .carte_ravioles:hover .bouton{margin-right:0px;transition:1s;}
-
-           .carte_ravioles .bouton{margin-top:0px;height:83px;border-radius:0 10px 10px 0;}
-
-           .fa-solid.fa-check{margin-left:37%;
-            background-color:white;
-            color: #00ffff;
-            border-radius:50%;
-            padding:4%;
-            margin-top:29%;}
-    
-            .prix{position:absolute;right:23px;bottom:-6px;}
-    
-
-            .carte_ravioles:hover>.prix{margin-right:90px;transition:1s;}
-
-
-                .bouton{
-                    background-color: #99E2D0;
-                    width:24%;
-                    height:78px;
-                    margin-top: 1%;
-                    margin-right:-96px;
-                    z-index:1; }
-
-                  
-                            
-        
-                                .pied {
-                                    display: flex;
-                                    flex-direction:column;
-                                    align-items:flex-start;
-                                    padding-top: 0%;
-                                    padding-bottom: 0%;
-                                    justify-content: space-around;
-                                }
-                                .fa-solid.fa-utensils{width:25px;}
-
-                                .fa-solid.fa-handshake-angle{width:25px;}
-
-                    .carte_ravioles{border-radius:15px;gap:1px;
-                        display: flex;justify-content:space-between;
-                        overflow: hidden;position: relative;
-                        width:345px;margin-bottom: 1px;
-                        height:74px ;
-                        padding-right:0px;margin-left:23px;
-                        box-shadow:5px 5px 5px 5px ;}
-
-                    .commander{
-                        display: flex;
-                        width:87%;
-                        padding-top:6%;
-                        padding-bottom:9%;
-                        margin-left:-28px;
-                        justify-content:center;}
-
-                        .header h1{display:flex;
-                            justify-content:center;
-                            margin-left: 25px;
-                            flex-direction:row;}
-
-
-                        .titre_page{display: flex;
-                            justify-content: center;
-                            margin-right:2%;
-                            flex-direction: row;}
-
-
-                .fa-solid.fa-heart{font-size:30px;
-                    color:transparent;
-                    background-clip:text;
-                    -webkit-background-clip:text;
-                    position:absolute;
-                    right:14px;
-                    opacity:0;
-                    padding:10px;
-                    background-image:linear-gradient(red,blue);}
-        
-              .fa-regular.fa-heart{color:black;font-size:30px;position:absolute;right:11px;}
-        
-        
-                .fa-solid.fa-heart:hover{opacity:1;}
-        
-                @keyframes slidedown {
-                    from {
-                        transform:translateY(150px);
-                        opacity:0;
-                    }
-                    to {
-                        transform:translateY(20px);
-                        opacity:1;
-                    }
-                }
-
-                    .entre_carte{transition:.5s;animation:slidedown 4s;}
-
-                    .plats_carte{transition:.5s;animation:slidedown 4s;}
-
-                    .dessert_carte{transition:.5s;animation:slidedown 4s;}
-
-
-                .carte_ravioles:hover .sauce{
-                    text-overflow:ellipsis;
-                    width:184px;
-                    transition: 5s;
-                    overflow: hidden;
-                    white-space:nowrap;}
-
-                    .sauce{margin-left:10px;margin-top:-8px;}
-
-            .ravioles{font-weight:bold;margin-left:9px;}
-
-            .prix_entre{display:flex;
-                flex-direction: row;
-                justify-content:space-between;
-                }
-
-            .carte_ravioles:hover:nth-child(3){background-color:  #8000804a; }
-
-            .commander button{
-                color: white;
-                font-weight: 300;
-                font-size: 20px;
-                margin-left:90px ;
-                padding: 10px 30px;
-                border-radius: 30px;
-                box-shadow: 2px 1px 16px -3px #000000;
-                margin-top: 40px;
-                height: 73px;
-                width: 300px;
-                border: none;
-                background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
-            }
-
-            .pied {
-                background-color: #3f3232;
-                color: white;
-            }
-
-            .pied p{margin-left:29px;margin-top:-7px;}
-
-            .titre_menu{ 
-                background-color:white;
-                border-radius: 33px;
-                position: relative;
-                z-index: 1;
-                margin-top: -26px;
-            }
-
-            .image{position:relative;}
-
-
-
-            .fa-solid.fa-euro-sign{margin-top:-1px;margin-left:1px;}
-
-            .myfood{display:flex;align-items:center;justify-content: space-between;}
-
-
-            @media(min-width:768px) and (max-width:992px)
-            {
-
-                .carte_ravioles{width:94%;background-color:lightgray;}
-
-                .carte_ravioles .bouton{margin-right:-87px;width:86px;}
-
-                .carte_ravioles:hover .sauce {
-                    overflow:visible;
-                    
-                }
-            }
-
-
-            @media (min-width:992px)
-            {
-                .entre_carte{display: flex;
-                    justify-content: center;
-                    flex-direction: row;}
-
-                .plats_carte{display: flex;
-                    justify-content: center;
-                    flex-direction: row;}
-
-                .dessert_carte{display: flex;
-                    justify-content: center;
-                    flex-direction: row;}
-
-                .carte_ravioles:hover .sauce {
-                    text-overflow: ellipsis;
-                    width:129px; }
-                
-                .carte_ravioles .sauce{
-                    font-size:13px; }
-                                      }
-
-                  @media (min-width:1200px) {
-                    .carte_ravioles:hover .sauce {
-                        text-overflow: ellipsis;
-                        width:160px; }
-
-                  }                   
-
-
-
-             
-                  
-                  
-                
-
-            
-
-    
-
-
-                    
-
-
-
-            
+body {
+	font-family: roboto;
+	margin: 0px;
+}
+
+header h1 {
+	font-family: "shrikhand";
+	margin-left: 14px;
+	text-align: center;
+}
+
+header a {
+	text-decoration: none;
+	color: black;
+}
+
+.image img {
+	height: 466px;
+	object-fit: cover;
+	width: 100%;
+	top: 8px;
+	position: relative;
+	width: 100%;
+}
+
+.menu h1 {
+	font-family: "shrikhand";
+	position: relative;
+	top: -1px;
+	margin-left: 29px;
+	font-size: 30px;
+}
+
+.titre_menu {
+	display: flex;
+	justify-content: space-between;
+	border-radius: 15px;
+	align-items: center;
+}
+
+.entre {
+	border-bottom: 1px solid aqua;
+	margin-top: 47px;
+	margin-bottom: 19px;
+	margin-left: 27px;
+	width: 40px;
+}
+
+.fa-regular.fa-heart {
+	font-weight: 145;
+	margin-right: 13px;
+	font-size: 28px;
+}
+
+.fa-solid.fa-heart {
+	font-size: 30px;
+	color: transparent;
+	background-clip: text;
+	-webkit-background-clip: text;
+	position: absolute;
+	right: 29px;
+	top: 32px;
+	opacity: 0;
+	padding: 10px;
+	background-image: linear-gradient(red, blue);
+}
+
+.fa-regular.fa-heart {
+	color: black;
+	font-size: 30px;
+	position: absolute;
+	right: 40px;
+	top: 42px;
+}
+
+.fa-solid.fa-heart:hover {
+	opacity: 1;
+}
+
+.fa-solid.fa-arrow-left {
+	margin-top: 13px;
+	margin-left: 26px;
+	font-size: 22px;
+	color: black;
+	position: absolute;
+}
+
+.plats_carte {
+	gap: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+.dessert_carte {
+	gap: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+.entre_carte {
+	gap: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+.prix_ravioles {
+	display: flex;
+	margin-top: 10px;
+}
+
+.carte_ravioles:hover .fa-solid.fa-check {
+	transform: rotate(1turn);
+	transition: 2s;
+}
+
+.carte_ravioles:hover .bouton {
+	margin-right: 0px;
+	transition: 1s;
+}
+
+.carte_ravioles .bouton {
+	margin-top: 0px;
+	height: 83px;
+	border-radius: 0 10px 10px 0;
+}
+
+.fa-solid.fa-check {
+	margin-left: 37%;
+	background-color: white;
+	color: #00ffff;
+	border-radius: 50%;
+	padding: 4%;
+	margin-top: 29%;
+}
+
+.prix {
+	position: absolute;
+	right: 23px;
+	bottom: -6px;
+}
+
+.carte_ravioles:hover > .prix {
+	margin-right: 90px;
+	transition: 1s;
+}
+
+.bouton {
+	background-color: #99e2d0;
+	width: 24%;
+	height: 78px;
+	margin-top: 1%;
+	margin-right: -96px;
+	z-index: 1;
+}
+
+.pied {
+	display: flex;
+	flex-direction: column;
+    background-color:#3f3232; 
+    color: white;
+	align-items: flex-start;
+	padding-top: 0%;
+	padding-bottom: 0%;
+	justify-content: space-around;
+}
+.fa-solid.fa-utensils {
+	width: 25px;
+}
+
+.fa-solid.fa-handshake-angle {
+	width: 25px;
+}
+
+.carte_ravioles {
+	border-radius: 15px;
+	gap: 1px;
+	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
+	position: relative;
+	width: 345px;
+	margin-bottom: 1px;
+	height: 74px;
+	padding-right: 0px;
+	margin-left: 23px;
+	box-shadow: 5px 5px 5px 5px;
+}
+
+.commander {
+	display: flex;
+	width: 87%;
+	padding-top: 6%;
+	padding-bottom: 9%;
+	margin-left: -28px;
+	justify-content: center;
+}
+
+.header h1 {
+	display: flex;
+	justify-content: center;
+	margin-left: 25px;
+	flex-direction: row;
+}
+
+.titre_page {
+	display: flex;
+	justify-content: center;
+	margin-right: 2%;
+	flex-direction: row;
+}
+
+.fa-solid.fa-heart {
+	font-size: 30px;
+	color: transparent;
+	background-clip: text;
+	-webkit-background-clip: text;
+	position: absolute;
+	right: 14px;
+	opacity: 0;
+	padding: 10px;
+	background-image: linear-gradient(red, blue);
+}
+
+.fa-regular.fa-heart {
+	color: black;
+	font-size: 30px;
+	position: absolute;
+	right: 11px;
+}
+
+.fa-solid.fa-heart:hover {
+	opacity: 1;
+}
+
+@keyframes slidedown {
+	from {
+		transform: translateY(150px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(20px);
+		opacity: 1;
+	}
+}
+
+.entre_carte {
+	transition: 0.5s;
+	animation: slidedown 4s;
+}
+
+.plats_carte {
+	transition: 0.5s;
+	animation: slidedown 4s;
+}
+
+.dessert_carte {
+	transition: 0.5s;
+	animation: slidedown 4s;
+}
+
+.carte_ravioles:hover .sauce {
+	text-overflow: ellipsis;
+	width: 184px;
+	transition: 5s;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.sauce {
+	margin-left: 10px;
+	margin-top: -8px;
+}
+
+.ravioles {
+	font-weight: bold;
+	margin-left: 9px;
+}
+
+.prix_entre {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.carte_ravioles:hover:nth-child(3) {
+	background-color: #8000804a;
+}
+
+.commander button {
+	color: white;
+	font-weight: 300;
+	font-size: 20px;
+	margin-left: 90px;
+	padding: 10px 30px;
+	border-radius: 30px;
+	box-shadow: 2px 1px 16px -3px #000000;
+	margin-top: 40px;
+	height: 73px;
+	width: 300px;
+	border: none;
+	background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+}
+
+.pied p {
+	margin-left: 29px;
+	margin-top: -7px;
+}
+
+.titre_menu {
+	background-color: white;
+	border-radius: 33px;
+	position: relative;
+	z-index: 1;
+	margin-top: -26px;
+}
+
+.image {
+	position: relative;
+}
+
+.fa-solid.fa-euro-sign {
+	margin-top: -1px;
+	margin-left: 1px;
+}
+
+
+@media (min-width:768px) and (max-width:992px) {
+	.carte_ravioles {
+		width: 94%;
+		background-color: lightgray;
+	}
+
+	.carte_ravioles .bouton {
+		margin-right:-87px;
+		width: 86px;
+	}
+
+	.carte_ravioles:hover .sauce {
+		overflow: visible;
+	}
+}
+
+@media (min-width: 992px) {
+	.entre_carte {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+	}
+
+	.plats_carte {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+	}
+
+	.dessert_carte {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+	}
+
+	.carte_ravioles:hover .sauce {
+		text-overflow: ellipsis;
+		width: 129px;
+	}
+
+	.carte_ravioles .sauce {
+		font-size: 13px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.carte_ravioles:hover .sauce {
+		text-overflow: ellipsis;
+		width: 160px;
+	}
+}
