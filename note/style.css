@@ -401,7 +401,7 @@ header a {
 
     .carte_ravioles .sauce {
         text-overflow: ellipsis;
-		width:100px;
+		width:150px;
         font-size:16px;
         white-space: nowrap; 
         overflow: hidden;
@@ -417,7 +417,7 @@ header a {
 
     .carte_ravioles .ravioles {
 		text-overflow: ellipsis;
-		width:170px;
+		width:190px;
         overflow: hidden;
         white-space: nowrap;
         

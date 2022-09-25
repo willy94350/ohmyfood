@@ -123,6 +123,13 @@ header a {
 	height: 83px;
 	border-radius: 0 10px 10px 0;
 }
+.carte_ravioles:hover .ravioles{
+	text-overflow: ellipsis;
+	width:200px;
+	white-space:nowrap;
+	overflow: hidden;
+}
+
 
 .fa-solid.fa-check {
 	margin-left: 37%;
@@ -366,6 +373,13 @@ header a {
 
 	.carte_ravioles .sauce {
 		font-size: 13px;
+	}
+
+	.carte_ravioles:hover .ravioles{
+		text-overflow: ellipsis;
+		width:200px;
+		white-space:nowrap;
+		overflow: hidden;
 	}
 }
 

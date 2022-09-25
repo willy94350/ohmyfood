@@ -118,6 +118,13 @@ header a {
 	transition: 1s;
 }
 
+.carte_ravioles .sauce{
+	text-overflow: ellipsis;
+	width:280px;
+	white-space:nowrap;
+	overflow: hidden;
+}
+
 .carte_ravioles .bouton {
 	margin-top: 0px;
 	height: 83px;
@@ -226,10 +233,13 @@ header a {
 	font-size: 30px;
 	position: absolute;
 	right: 11px;
+	top:25px;
 }
 
 .fa-solid.fa-heart:hover {
 	opacity: 1;
+	position: absolute;
+	top:14px;
 }
 
 @keyframes slidedown {
@@ -261,7 +271,6 @@ header a {
 .carte_ravioles:hover .sauce {
 	text-overflow: ellipsis;
 	width: 184px;
-	transition: 5s;
 	overflow: hidden;
 	white-space: nowrap;
 }
@@ -347,12 +356,30 @@ header a {
 		flex-direction: row;
 	}
 
+	.carte_ravioles{
+		width:25%;
+	}
+
 	.plats_carte {
 		display: flex;
 		justify-content: center;
 		flex-direction: row;
 	}
 
+	.carte_ravioles:hover .ravioles {
+		text-overflow: ellipsis;
+		width:200px;
+        transition: 1s;
+        overflow: hidden;
+        white-space: nowrap;
+	}
+	.carte_ravioles .sauce {
+        text-overflow: ellipsis;
+		width:200px;
+        font-size:16px;
+        white-space: nowrap; 
+        overflow: hidden;
+	}
 	.dessert_carte {
 		display: flex;
 		justify-content: center;
@@ -364,9 +391,7 @@ header a {
 		width: 129px;
 	}
 
-	.carte_ravioles .sauce {
-		font-size: 13px;
-	}
+	
 }
 
 @media (min-width: 1200px) {
@@ -374,4 +399,12 @@ header a {
 		text-overflow: ellipsis;
 		width: 160px;
 	}
+	.carte_ravioles .sauce {
+        text-overflow: ellipsis;
+		width:280px;
+        font-size:16px;
+        white-space: nowrap; 
+        overflow: hidden;
+	}
+
 }
