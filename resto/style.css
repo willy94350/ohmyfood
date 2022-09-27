@@ -118,10 +118,10 @@ header a {
 	transition: 1s;
 }
 
-.carte_ravioles .sauce{
+.carte_ravioles .sauce {
 	text-overflow: ellipsis;
-	width:280px;
-	white-space:nowrap;
+	width: 280px;
+	white-space: nowrap;
 	overflow: hidden;
 }
 
@@ -163,8 +163,8 @@ header a {
 .pied {
 	display: flex;
 	flex-direction: column;
-    background-color:#3f3232; 
-    color: white;
+	background-color: #3f3232;
+	color: white;
 	align-items: flex-start;
 	padding-top: 0%;
 	padding-bottom: 0%;
@@ -233,13 +233,13 @@ header a {
 	font-size: 30px;
 	position: absolute;
 	right: 11px;
-	top:25px;
+	top: 25px;
 }
 
 .fa-solid.fa-heart:hover {
 	opacity: 1;
 	position: absolute;
-	top:14px;
+	top: 14px;
 }
 
 @keyframes slidedown {
@@ -332,15 +332,14 @@ header a {
 	margin-left: 1px;
 }
 
-
-@media (min-width:768px) and (max-width:992px) {
+@media (min-width: 768px) and (max-width: 992px) {
 	.carte_ravioles {
 		width: 94%;
 		background-color: lightgray;
 	}
 
 	.carte_ravioles .bouton {
-		margin-right:-87px;
+		margin-right: -87px;
 		width: 86px;
 	}
 
@@ -356,8 +355,8 @@ header a {
 		flex-direction: row;
 	}
 
-	.carte_ravioles{
-		width:25%;
+	.carte_ravioles {
+		width: 25%;
 	}
 
 	.plats_carte {
@@ -368,17 +367,17 @@ header a {
 
 	.carte_ravioles:hover .ravioles {
 		text-overflow: ellipsis;
-		width:200px;
-        transition: 1s;
-        overflow: hidden;
-        white-space: nowrap;
+		width: 200px;
+		transition: 1s;
+		overflow: hidden;
+		white-space: nowrap;
 	}
 	.carte_ravioles .sauce {
-        text-overflow: ellipsis;
-		width:200px;
-        font-size:16px;
-        white-space: nowrap; 
-        overflow: hidden;
+		text-overflow: ellipsis;
+		width: 200px;
+		font-size: 16px;
+		white-space: nowrap;
+		overflow: hidden;
 	}
 	.dessert_carte {
 		display: flex;
@@ -390,8 +389,6 @@ header a {
 		text-overflow: ellipsis;
 		width: 129px;
 	}
-
-	
 }
 
 @media (min-width: 1200px) {
@@ -400,11 +397,10 @@ header a {
 		width: 160px;
 	}
 	.carte_ravioles .sauce {
-        text-overflow: ellipsis;
-		width:280px;
-        font-size:16px;
-        white-space: nowrap; 
-        overflow: hidden;
+		text-overflow: ellipsis;
+		width: 280px;
+		font-size: 16px;
+		white-space: nowrap;
+		overflow: hidden;
 	}
-
 }

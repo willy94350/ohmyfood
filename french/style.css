@@ -156,8 +156,8 @@ header a {
 .pied {
 	display: flex;
 	flex-direction: column;
-    background-color:#3f3232; 
-    color: white;
+	background-color: #3f3232;
+	color: white;
 	align-items: flex-start;
 	padding-top: 0%;
 	padding-bottom: 0%;
@@ -323,15 +323,14 @@ header a {
 	margin-left: 1px;
 }
 
-
-@media (min-width:768px) and (max-width:992px) {
+@media (min-width: 768px) and (max-width: 992px) {
 	.carte_ravioles {
 		width: 94%;
 		background-color: lightgray;
 	}
 
 	.carte_ravioles .bouton {
-		margin-right:-87px;
+		margin-right: -87px;
 		width: 86px;
 	}
 
