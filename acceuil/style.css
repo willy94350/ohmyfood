@@ -206,11 +206,10 @@ li:hover {
 
 i.fas {
 	margin-right: -2px;
-	bottom: -28px;
 	margin-top: -11px;
 	color: #58008091;
 	position: relative;
-	left: -22px;
+	top:10px;
 }
 
 ol {
@@ -328,18 +327,20 @@ h2 {
 	color: transparent;
 	background-clip: text;
 	-webkit-background-clip: text;
-	position: absolute;
+	position:relative;
 	right: 1px;
 	opacity: 0;
 	padding: 10px;
 	background-image: linear-gradient(red, blue);
+	top:11px;
 }
 
 .fa-regular.fa-heart {
 	color: black;
 	font-size: 30px;
-	position: absolute;
+	position:absolute;
 	right: 11px;
+	top:162px;
 }
 
 .fa-solid.fa-heart:hover {
@@ -419,8 +420,27 @@ h2 {
 		top: 51px;
 	}
 }
+@media (min-width:800px)
+{
+	.bulle{bottom:-24px;}
 
-@media (min-width: 992px) {
+	.fas.fa-mobile-alt {
+		top: 44px;
+	}
+
+	.fas.fa-list-ul {
+		top: 44px;
+	}
+
+	.fas.fa-store {
+		top: 44px;
+	}
+}
+
+
+
+
+@media (min-width:972px) {
 	.carte {
 		width: 98%;
 		margin:0 25px;
@@ -437,15 +457,15 @@ h2 {
 	.bulle{bottom:-34px;}
 
 	.fas.fa-mobile-alt {
-		top: 35px;
+		top: 36px;
 	}
 
 	.fas.fa-list-ul {
-		top: 35px;
+		top: 36px;
 	}
 
 	.fas.fa-store {
-		top: 35px;
+		top: 36px;
 	}
 
 	.para_li {
@@ -456,4 +476,10 @@ h2 {
 
 
 }
+
+
+	
+
+
+
 
