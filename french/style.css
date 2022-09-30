@@ -193,10 +193,6 @@ header a {
 	width:382px;
 }
 
-.carte_ravioles:hover{
-filter: brightness(100%);
-box-shadow: x-offset y-offset ;
-}
 
 .loader{
 	position: fixed;

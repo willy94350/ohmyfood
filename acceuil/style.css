@@ -370,39 +370,37 @@ h2 {
 	position: relative;
 	top: 23%;
 }
-.loader {
-	position: fixed;
-	background-color: #d3d3d35e;
-	color: transparent;
-	height: 100vh;
-	z-index: -1;
-	inset: 0;
-	opacity: 0.9;
-	animation: yeh 200ms 1s forwards;
-	animation-fill-mode: forwards;
-	display: grid;
-	place-items: center;
-	animation-delay: 2s;
-}
 
-.fa-solid.fa-spinner.fa-3x.fa-spin {
-	position: absolute;
-	top: 25px;
-}
 
 .pied a {
 	text-decoration: none;
 	color: white;
 }
 
-@keyframes yeh {
-	0% {
-		transform: scale(1);
-	}
 
-	100% {
-		transform: scale(0);
-	}
+
+.loader{
+	position: fixed;
+	background-color:#d3d3d35e;
+	height: 100vh;
+	z-index:-1;
+	inset:0;
+	opacity: 0.7;
+	animation: spin 200ms 1s forwards;
+	animation-fill-mode: forwards;
+	display: grid;
+	place-items:center;
+	animation-delay: 1s;
+}
+
+.fa-solid.fa-spinner.fa-3x.fa-spin{position:absolute;top:25px;}
+
+@keyframes spin {
+
+	0%{transform:scale(1);}
+
+	100%{transform:scale(0);}
+
 }
 
 @media (min-width: 768px) {
