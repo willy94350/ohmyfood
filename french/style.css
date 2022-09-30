@@ -72,17 +72,23 @@ header a {
 	right: 40px;
 	top: 42px;
 }
-
-.fa-solid.fa-heart:active, .fa-solid.fa-heart:focus {
+.fa-solid.fa-heart:hover {
 	opacity: 1;
-	animation: effet 0.1s;
-	animation-fill-mode:forwards;
+	animation: effet 0.2s ease-in-out;
+	animation-fill-mode: forwards;
+	transform-origin: middle;
 }
 
-@keyframes effet{
-	0%{transform:scale(1);}
-	100%{transform:scale(1);}
+@keyframes effet {
+	0% {
+		transform: scale(0%);
+	}
+	100% {
+		transform: scale(100%);
+	}
 }
+
+
 
 .fa-solid.fa-arrow-left {
 	margin-top: 13px;
@@ -222,7 +228,7 @@ header a {
 .commander {
 	display: flex;
 	padding-top: 6%;
-	padding-bottom: 9%;
+	padding-bottom: 23%;
 	justify-content: center;
 	margin:0 25px;
 }
@@ -343,6 +349,13 @@ header a {
 }
 
 .pied a {text-decoration: none;color: white;}
+
+.commander button:hover {
+	transform: scale(1);
+	filter: brightness(110%);
+	box-shadow: 5px 5px 5px 5px #00000073;
+	padding: 0;
+}
 
 @media (min-width: 768px){
 	.carte_ravioles {
