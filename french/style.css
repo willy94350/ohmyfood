@@ -52,14 +52,14 @@ header a {
 	font-size: 28px;
 }
 
-.fa-solid.fa-heart {
+.fa-solid.fa-heart{
 	font-size: 30px;
 	color: transparent;
 	background-clip: text;
 	-webkit-background-clip: text;
 	position: absolute;
-	right: 29px;
-	top: 32px;
+	right: 15px;
+	top: 16px;
 	opacity: 0;
 	padding: 10px;
 	background-image: linear-gradient(red, blue);
@@ -73,8 +73,15 @@ header a {
 	top: 42px;
 }
 
-.fa-solid.fa-heart:hover {
+.fa-solid.fa-heart:active, .fa-solid.fa-heart:focus {
 	opacity: 1;
+	animation: effet 0.1s;
+	animation-fill-mode:forwards;
+}
+
+@keyframes effet{
+	0%{transform:scale(1);}
+	100%{transform:scale(1);}
 }
 
 .fa-solid.fa-arrow-left {
@@ -186,6 +193,35 @@ header a {
 	width:382px;
 }
 
+.carte_ravioles:hover{
+filter: brightness(100%);
+box-shadow: x-offset y-offset ;
+}
+
+.loader{
+	position: fixed;
+	background-color:#d3d3d35e;
+	height: 100vh;
+	z-index:-1;
+	inset:0;
+	opacity: 0.9;
+	animation: yeh 200ms 1s forwards;
+	animation-fill-mode: forwards;
+	display: grid;
+	place-items:center;
+	animation-delay: 2s;
+}
+
+.fa-solid.fa-spinner.fa-3x.fa-spin{position:absolute;top:25px;}
+
+@keyframes yeh {
+
+	0%{transform:scale(1);}
+
+	100%{transform:scale(0);}
+
+}
+
 
 .commander {
 	display: flex;
@@ -209,18 +245,7 @@ header a {
 	flex-direction: row;
 }
 
-.fa-solid.fa-heart {
-	font-size: 30px;
-	color: transparent;
-	background-clip: text;
-	-webkit-background-clip: text;
-	position: absolute;
-	right: 14px;
-	opacity: 0;
-	padding: 10px;
-	background-image: linear-gradient(red, blue);
-	top:16px;
-}
+
 
 .fa-regular.fa-heart {
 	color: black;
@@ -230,9 +255,6 @@ header a {
 	top:26px;
 }
 
-.fa-solid.fa-heart:hover {
-	opacity: 1;
-}
 
 @keyframes slidedown {
 	from {
@@ -323,6 +345,8 @@ header a {
 	margin-top: -1px;
 	margin-left: 1px;
 }
+
+.pied a {text-decoration: none;color: white;}
 
 @media (min-width: 768px){
 	.carte_ravioles {

@@ -18,7 +18,6 @@ header {
 }
 
 header h1 {
-
 }
 
 .fa-solid.fa-location-dot {
@@ -29,7 +28,7 @@ header h1 {
 
 .para_decou {
 	margin-top: 16px;
-	padding:2px 43px;
+	padding: 2px 43px;
 }
 
 .para_explo {
@@ -77,13 +76,13 @@ main .lieu {
 	background-color: #d3d3d31f;
 	padding-bottom: 70px;
 	margin-bottom: 42px;
-	padding-top:7px;
+	padding-top: 7px;
 }
 
 .reserver h2 {
 	margin-top: 23px;
 	margin-left: 5px;
-	padding:3px 95px;
+	padding: 3px 95px;
 }
 .reserver p {
 	font-size: 17px;
@@ -121,6 +120,8 @@ main .lieu {
 
 .reserver button:hover {
 	transform: scale(1.1);
+	filter: brightness(110%);
+	box-shadow: 5px 5px 5px 5px #00000073;
 }
 
 li {
@@ -188,7 +189,7 @@ li:hover {
 
 .carte {
 	height: 200px;
-	margin:0 25px;
+	margin: 0 25px;
 	background-color: white;
 	border-radius: 15px 15px 15px 15px;
 	text-decoration: none;
@@ -196,32 +197,34 @@ li:hover {
 	box-shadow: 1px 2px 6px 6px #dfdfdf;
 }
 
-
-
-.titre_section{margin-top: 10px;
+.titre_section {
+	margin-top: 10px;
 	font-weight: bold;
-	margin-left:20px;}
+	margin-left: 20px;
+}
 
-	.titre{margin-left: -35px;}
+.titre {
+	margin-left: -35px;
+}
 
 i.fas {
 	margin-right: -2px;
 	margin-top: -11px;
 	color: #58008091;
 	position: relative;
-	top:10px;
+	top: 10px;
 }
 
 ol {
 	list-style-type: none;
 	gap: 15px;
 	padding: 10px 25px;
-	margin-bottom:-22px;
+	margin-bottom: -22px;
 }
 
-.fonction {padding:10px 25px;}
-
-
+.fonction {
+	padding: 10px 25px;
+}
 
 h2 {
 	margin-bottom: 24px;
@@ -272,7 +275,6 @@ h2 {
 	color: white;
 	align-items: flex-start;
 	padding-top: 0%;
-
 	padding-bottom: 0%;
 	margin-top: 52px;
 	justify-content: space-around;
@@ -304,7 +306,10 @@ h2 {
 	padding-top: 43px;
 }
 
-.titre_resto{font-weight: bold;margin-left:33px;}
+.titre_resto {
+	font-weight: bold;
+	margin-left: 33px;
+}
 
 .new {
 	text-decoration: none;
@@ -327,24 +332,35 @@ h2 {
 	color: transparent;
 	background-clip: text;
 	-webkit-background-clip: text;
-	position:relative;
+	position: relative;
 	right: 1px;
 	opacity: 0;
 	padding: 10px;
 	background-image: linear-gradient(red, blue);
-	top:11px;
+	top: 11px;
 }
 
 .fa-regular.fa-heart {
 	color: black;
 	font-size: 30px;
-	position:absolute;
+	position: absolute;
 	right: 11px;
-	top:162px;
+	top: 162px;
 }
-
 .fa-solid.fa-heart:hover {
 	opacity: 1;
+	animation: effet 0.2s ease-in-out;
+	animation-fill-mode: forwards;
+	transform-origin: middle;
+}
+
+@keyframes effet {
+	0% {
+		transform: scale(0%);
+	}
+	100% {
+		transform: scale(100%);
+	}
 }
 
 .number {
@@ -354,16 +370,51 @@ h2 {
 	position: relative;
 	top: 23%;
 }
+.loader {
+	position: fixed;
+	background-color: #d3d3d35e;
+	color: transparent;
+	height: 100vh;
+	z-index: -1;
+	inset: 0;
+	opacity: 0.9;
+	animation: yeh 200ms 1s forwards;
+	animation-fill-mode: forwards;
+	display: grid;
+	place-items: center;
+	animation-delay: 2s;
+}
 
-@media (min-width:768px) {
+.fa-solid.fa-spinner.fa-3x.fa-spin {
+	position: absolute;
+	top: 25px;
+}
+
+.pied a {
+	text-decoration: none;
+	color: white;
+}
+
+@keyframes yeh {
+	0% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(0);
+	}
+}
+
+@media (min-width: 768px) {
 	.carte_menu {
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: row;
-
 	}
 
-	.bulle{bottom:-8px}
+	.bulle {
+		bottom: -8px;
+	}
 	.carte {
 		width: 45%;
 		margin: 10px 10px;
@@ -381,13 +432,10 @@ h2 {
 		top: 50px;
 	}
 
-	
-
 	ol {
 		display: flex;
 		flex-direction: row;
-		gap:23px;
-
+		gap: 23px;
 	}
 
 	li {
@@ -420,9 +468,10 @@ h2 {
 		top: 51px;
 	}
 }
-@media (min-width:800px)
-{
-	.bulle{bottom:-24px;}
+@media (min-width: 800px) {
+	.bulle {
+		bottom: -24px;
+	}
 
 	.fas.fa-mobile-alt {
 		top: 44px;
@@ -437,13 +486,10 @@ h2 {
 	}
 }
 
-
-
-
-@media (min-width:972px) {
+@media (min-width: 972px) {
 	.carte {
 		width: 98%;
-		margin:0 25px;
+		margin: 0 25px;
 	}
 	ol {
 		display: flex;
@@ -452,9 +498,13 @@ h2 {
 		flex-direction: column;
 	}
 
-	.carte_menu{display: flex;}
+	.carte_menu {
+		display: flex;
+	}
 
-	.bulle{bottom:-34px;}
+	.bulle {
+		bottom: -34px;
+	}
 
 	.fas.fa-mobile-alt {
 		top: 36px;
@@ -472,14 +522,4 @@ h2 {
 		position: relative;
 		top: 1px;
 	}
-
-
-
 }
-
-
-	
-
-
-
-
