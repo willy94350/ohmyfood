@@ -127,7 +127,7 @@ header a {
 .fa-solid.fa-check {
 	margin-left: 37%;
 	background-color: white;
-	color:#99e2d0; 
+	color: #99e2d0;
 	border-radius: 50%;
 	padding: 4%;
 	margin-top: 29%;
@@ -182,17 +182,16 @@ header a {
 	height: 74px;
 	padding-right: 0px;
 	box-shadow: 3px 3px 3px 3px lightgray;
-	margin:0 31px;
-	width:382px;
+	margin: 0 31px;
+	width: 382px;
 }
-
 
 .commander {
 	display: flex;
 	padding-top: 6%;
 	padding-bottom: 9%;
 	justify-content: center;
-	margin:0 25px;
+	margin: 0 25px;
 }
 
 .header h1 {
@@ -219,7 +218,7 @@ header a {
 	opacity: 0;
 	padding: 10px;
 	background-image: linear-gradient(red, blue);
-	top:16px;
+	top: 16px;
 }
 
 .fa-regular.fa-heart {
@@ -227,7 +226,7 @@ header a {
 	font-size: 30px;
 	position: absolute;
 	right: 12px;
-	top:26px;
+	top: 26px;
 }
 
 .fa-solid.fa-heart:hover {
@@ -295,7 +294,7 @@ header a {
 	padding: 10px 30px;
 	border-radius: 30px;
 	box-shadow: 2px 1px 16px -3px #000000;
-	width:67%;
+	width: 67%;
 	margin-top: 40px;
 	height: 73px;
 	border: none;
@@ -324,7 +323,48 @@ header a {
 	margin-left: 1px;
 }
 
-@media (min-width: 768px){
+.pied a {
+	text-decoration: none;
+	color: white;
+}
+
+.loader {
+	position: fixed;
+	background-color: #d3d3d35e;
+	height: 100vh;
+	z-index: -1;
+	inset: 0;
+	opacity: 0.9;
+	animation: yeh 200ms 1s forwards;
+	animation-fill-mode: forwards;
+	display: grid;
+	place-items: center;
+	animation-delay: 2s;
+}
+
+.fa-solid.fa-spinner.fa-3x.fa-spin {
+	position: absolute;
+	top: 25px;
+}
+
+@keyframes yeh {
+	0% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(0);
+	}
+}
+
+.commander button:hover {
+	transform: scale(1);
+	filter: brightness(110%);
+	box-shadow: 5px 5px 5px 5px #00000073;
+	padding: 0;
+}
+
+@media (min-width: 768px) {
 	.carte_ravioles {
 		width: 94%;
 		background-color: lightgray;
@@ -364,17 +404,14 @@ header a {
 		width: 100px;
 		overflow: hidden;
 		white-space: white;
-		transition:1s;
-
+		transition: 1s;
 	}
-	.carte_ravioles:hover .ravioles{
+	.carte_ravioles:hover .ravioles {
 		text-overflow: ellipsis;
 		width: 100px;
 		white-space: nowrap;
 		overflow: hidden;
 	}
-
-
 
 	.carte_ravioles .sauce {
 		font-size: 13px;
