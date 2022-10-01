@@ -378,6 +378,8 @@ header a {
 	.carte_ravioles:hover .sauce {
 		overflow: visible;
 	}
+
+	
 }
 
 @media (min-width: 992px) {
@@ -401,14 +403,14 @@ header a {
 
 	.carte_ravioles:hover .sauce {
 		text-overflow: ellipsis;
-		width: 100px;
+		width: 10px;
 		overflow: hidden;
 		white-space: white;
 		transition: 1s;
 	}
 	.carte_ravioles:hover .ravioles {
 		text-overflow: ellipsis;
-		width: 100px;
+		width: 10px;
 		white-space: nowrap;
 		overflow: hidden;
 	}
@@ -416,15 +418,69 @@ header a {
 	.carte_ravioles .sauce {
 		font-size: 13px;
 		text-overflow: ellipsis;
-		width: 180px;
+		width: 100px;
 		overflow: hidden;
 		white-space: nowrap;
 	}
+	.carte_ravioles .ravioles {
+		font-size: 13px;
+		text-overflow: ellipsis;
+		width: 100px;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+	.prix{
+		bottom:6px;
+	}
+
 }
 
 @media (min-width: 1200px) {
 	.carte_ravioles:hover .sauce {
 		text-overflow: ellipsis;
-		width: 160px;
+		width: 70px;
+		transition:1s;
 	}
+
+	.carte_ravioles:hover .ravioles {
+		text-overflow: ellipsis;
+		width: 120px;
+		transition: 1s;
+	}
+	.carte_ravioles .sauce {
+		text-overflow: ellipsis;
+		width: 140px;
+		font-size: 14px;
+		
+	}
+
+	.carte_ravioles .ravioles {
+		text-overflow: ellipsis;
+		width: 170px;
+		font-size: 14px;
+	}
+	.prix {
+
+		bottom: 2px;
+	}
+
+}
+@media (min-width:1400px){
+
+	.carte_ravioles .sauce {
+		text-overflow: ellipsis;
+		width:220px;
+	
+		
+	}
+
+	.carte_ravioles .ravioles {
+		text-overflow: ellipsis;
+		width: 220px;}
+
+		.prix {
+			bottom: 2px;
+		}
+
+
 }
