@@ -1,7 +1,7 @@
 body {
 	font-family: roboto;
 	margin: 0px;
-	padding: 0px;
+	padding: 0;
 }
 
 header h1 {
@@ -47,23 +47,17 @@ header a {
 	width: 40px;
 }
 
-.fa-regular.fa-heart {
-	font-weight: 145;
-	margin-right: 13px;
-	font-size: 28px;
-}
-
 .fa-solid.fa-heart {
 	font-size: 30px;
 	color: transparent;
 	background-clip: text;
 	-webkit-background-clip: text;
 	position: absolute;
-	right: 15px;
+	right: 2px;
 	top: 16px;
 	opacity: 0;
 	padding: 10px;
-	background-image: linear-gradient(red, blue);
+	background-image: radial-gradient(red,blue);
 }
 
 .fa-regular.fa-heart {
@@ -129,7 +123,6 @@ header a {
 	margin-right: 0px;
 	transition: 1s;
 }
-
 .carte_ravioles .bouton {
 	margin-top: 0px;
 	height: 83px;
@@ -162,7 +155,6 @@ header a {
 	height: 78px;
 	margin-top: 1%;
 	margin-right: -96px;
-	z-index: 1;
 }
 
 .pied {
@@ -175,6 +167,7 @@ header a {
 	padding-bottom: 0%;
 	justify-content: space-around;
 }
+
 .fa-solid.fa-utensils {
 	width: 25px;
 }
@@ -195,7 +188,7 @@ header a {
 	padding-right: 0px;
 	box-shadow: 3px 3px 3px 3px lightgray;
 	margin: 0 31px;
-	width: 382px;
+	width: 85%;
 }
 
 .loader {
@@ -207,8 +200,8 @@ header a {
 	opacity: 0.9;
 	animation: yeh 200ms 1s forwards;
 	animation-fill-mode: forwards;
-	display: grid;
-	place-items: center;
+	display: flex;
+	justify-content: center;
 	animation-delay: 2s;
 }
 
@@ -286,7 +279,7 @@ header a {
 .carte_ravioles:hover .sauce {
 	text-overflow: ellipsis;
 	width: 184px;
-	transition: 5s;
+	transition: 1s;
 	overflow: hidden;
 	white-space: nowrap;
 }
@@ -305,10 +298,6 @@ header a {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-}
-
-.carte_ravioles:nth-child(3) {
-	background-color: #8000804a;
 }
 
 .commander button {
@@ -358,6 +347,16 @@ header a {
 	box-shadow: 5px 5px 5px 5px #00000073;
 	padding: 0;
 }
+@media (min-width:466px){
+	.bouton{margin-right:-270px;}
+
+	.carte_ravioles:hover > .prix {
+		margin-right:130px;
+		transition: 1s;
+	}
+}
+
+
 
 @media (min-width: 768px) {
 	.carte_ravioles {
@@ -368,10 +367,6 @@ header a {
 	.carte_ravioles .bouton {
 		margin-right: -87px;
 		width: 86px;
-	}
-
-	.carte_ravioles:hover .sauce {
-		overflow: visible;
 	}
 }
 
@@ -417,9 +412,21 @@ header a {
 	}
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
 	.carte_ravioles:hover .sauce {
-		text-overflow: ellipsis;
-		width: 160px;
+		width: 200px;
 	}
+	.carte_ravioles .sauce {
+		width: 195px;
+		white-space: nowrap;
+	}
+	.carte_ravioles:hover .ravioles {
+		width: 210px;
+		white-space: nowrap;
+	}
+	.carte_ravioles .ravioles {
+		width: 200px;
+		white-space: nowrap;
+	}
+
 }

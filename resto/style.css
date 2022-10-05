@@ -59,10 +59,11 @@ header a {
 	-webkit-background-clip: text;
 	position: absolute;
 	right: 29px;
-	top: 32px;
+	top: 16px;
 	opacity: 0;
+	right: 14px;
 	padding: 10px;
-	background-image: linear-gradient(red, blue);
+	background-image: radial-gradient(red, blue);
 }
 
 .fa-regular.fa-heart {
@@ -75,6 +76,16 @@ header a {
 
 .fa-solid.fa-heart:hover {
 	opacity: 1;
+	animation: effet 0.2s ;
+}
+
+@keyframes effet {
+	0% {
+		transform: scale(0%);
+	}
+	100% {
+		transform: scale(100%);
+	}
 }
 
 .fa-solid.fa-arrow-left {
@@ -183,7 +194,7 @@ header a {
 	padding-right: 0px;
 	box-shadow: 3px 3px 3px 3px lightgray;
 	margin: 0 31px;
-	width: 382px;
+	width:85%;
 }
 
 .commander {
@@ -208,18 +219,6 @@ header a {
 	flex-direction: row;
 }
 
-.fa-solid.fa-heart {
-	font-size: 30px;
-	color: transparent;
-	background-clip: text;
-	-webkit-background-clip: text;
-	position: absolute;
-	right: 14px;
-	opacity: 0;
-	padding: 10px;
-	background-image: linear-gradient(red, blue);
-	top: 16px;
-}
 
 .fa-regular.fa-heart {
 	color: black;
@@ -283,9 +282,6 @@ header a {
 	justify-content: space-between;
 }
 
-.carte_ravioles:nth-child(3) {
-	background-color: #8000804a;
-}
 
 .commander button {
 	color: white;
@@ -298,7 +294,7 @@ header a {
 	margin-top: 40px;
 	height: 73px;
 	border: none;
-	background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+	background-image: linear-gradient( to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
 }
 
 .pied p {
@@ -364,6 +360,16 @@ header a {
 	}
 }
 
+@media (min-width:466px){
+	.bouton{margin-right:-190px;}
+	
+	.carte_ravioles:hover > .prix {
+		margin-right:130px;
+		transition: 1s;
+	}
+}
+
+
 @media (min-width: 768px) {
 	.carte_ravioles {
 		width: 94%;
@@ -414,13 +420,25 @@ header a {
 	}
 
 	.carte_ravioles .sauce {
-		font-size: 13px;
+		font-size: 14px;
 		text-overflow: ellipsis;
 		width: 180px;
 		overflow: hidden;
 		white-space: nowrap;
 	}
+	.carte_ravioles .ravioles {
+		font-size: 14px;
+		text-overflow: ellipsis;
+		width: 170px;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+	.prix{
+		top:21px
+	}
 }
+
+
 
 @media (min-width: 1200px) {
 	.carte_ravioles:hover .sauce {

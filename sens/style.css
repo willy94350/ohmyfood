@@ -184,7 +184,8 @@ header a {
 	padding-right: 0px;
 	box-shadow: 3px 3px 3px 3px lightgray;
 	margin: 0 31px;
-	width: 382px;
+	width:85%;
+	max-width: 85%;
 }
 
 .commander {
@@ -218,7 +219,7 @@ header a {
 	right: 14px;
 	opacity: 0;
 	padding: 10px;
-	background-image: linear-gradient(red, blue);
+	background-image: radial-gradient(red, blue);
 	top: 16px;
 }
 
@@ -232,7 +233,19 @@ header a {
 
 .fa-solid.fa-heart:hover {
 	opacity: 1;
+	animation: effet 0.2s ;
 }
+
+@keyframes effet {
+	0% {
+		transform: scale(0%);
+	}
+	100% {
+		transform: scale(100%);
+	}
+}
+
+
 
 @keyframes slidedown {
 	from {
@@ -284,9 +297,6 @@ header a {
 	justify-content: space-between;
 }
 
-.carte_ravioles:nth-child(3) {
-	background-color: #8000804a;
-}
 
 .commander button {
 	color: white;
@@ -364,10 +374,20 @@ header a {
 	box-shadow: 5px 5px 5px 5px #00000073;
 	padding: 0;
 }
+@media (min-width:466px){
+	.bouton{margin-right:-190px;}
+
+	.carte_ravioles:hover > .prix {
+		margin-right:130px;
+		transition: 1s;
+	}
+
+}
+
 
 @media (min-width: 768px) {
 	.carte_ravioles {
-		width: 94%;
+		width:94%;
 		background-color: lightgray;
 	}
 

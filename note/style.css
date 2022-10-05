@@ -58,12 +58,14 @@ header a {
 	background-clip: text;
 	-webkit-background-clip: text;
 	position: absolute;
-	right: 29px;
-	top: 32px;
+	right: 14px;
+	top: 16px;
 	opacity: 0;
 	padding: 10px;
-	background-image: linear-gradient(red, blue);
+	background-image: radial-gradient(red 0, blue 100%);
 }
+
+
 
 .fa-regular.fa-heart {
 	color: black;
@@ -183,7 +185,7 @@ header a {
 	padding-right: 0px;
 	box-shadow: 3px 3px 3px 3px lightgray;
 	margin: 0 31px;
-	width: 382px;
+	width:85%;
 }
 
 .commander {
@@ -208,18 +210,7 @@ header a {
 	flex-direction: row;
 }
 
-.fa-solid.fa-heart {
-	font-size: 30px;
-	color: transparent;
-	background-clip: text;
-	-webkit-background-clip: text;
-	position: absolute;
-	right: 14px;
-	opacity: 0;
-	padding: 10px;
-	background-image: linear-gradient(red, blue);
-	top: 16px;
-}
+
 
 .fa-regular.fa-heart {
 	color: black;
@@ -231,6 +222,16 @@ header a {
 
 .fa-solid.fa-heart:hover {
 	opacity: 1;
+	animation: effet 0.2s ;
+}
+
+@keyframes effet {
+	0% {
+		transform: scale(0%);
+	}
+	100% {
+		transform: scale(100%);
+	}
 }
 
 @keyframes slidedown {
@@ -283,9 +284,6 @@ header a {
 	justify-content: space-between;
 }
 
-.carte_ravioles:nth-child(3) {
-	background-color: #8000804a;
-}
 
 .commander button {
 	color: white;
@@ -364,6 +362,16 @@ header a {
 	padding: 0;
 }
 
+@media (min-width:466px){
+	.bouton{margin-right:-190px;}
+	
+	.carte_ravioles:hover > .prix {
+		margin-right:130px;
+		transition: 1s;
+	}
+}
+
+
 @media (min-width: 768px) {
 	.carte_ravioles {
 		width: 94%;
@@ -403,61 +411,33 @@ header a {
 
 	.carte_ravioles:hover .sauce {
 		text-overflow: ellipsis;
-		width: 10px;
+		width: 1px;
+		transition:1s;
+		white-space:nowrap;
 		overflow: hidden;
-		white-space: white;
-		transition: 1s;
 	}
+
 	.carte_ravioles:hover .ravioles {
-		text-overflow: ellipsis;
-		width: 10px;
-		white-space: nowrap;
-		overflow: hidden;
-	}
-
-	.carte_ravioles .sauce {
-		font-size: 13px;
-		text-overflow: ellipsis;
-		width: 100px;
-		overflow: hidden;
-		white-space: nowrap;
-	}
-	.carte_ravioles .ravioles {
-		font-size: 13px;
-		text-overflow: ellipsis;
-		width: 100px;
-		overflow: hidden;
-		white-space: nowrap;
-	}
-	.prix{
-		bottom:6px;
-	}
-
-}
-
-@media (min-width: 1200px) {
-	.carte_ravioles:hover .sauce {
 		text-overflow: ellipsis;
 		width: 70px;
-		transition:1s;
-	}
-
-	.carte_ravioles:hover .ravioles {
-		text-overflow: ellipsis;
-		width: 120px;
 		transition: 1s;
+		overflow:hidden ;
+		white-space:nowrap;
 	}
 	.carte_ravioles .sauce {
 		text-overflow: ellipsis;
-		width: 140px;
+		width:70px;
 		font-size: 14px;
-		
+		white-space:nowrap;
+		overflow: hidden;	
 	}
 
 	.carte_ravioles .ravioles {
 		text-overflow: ellipsis;
-		width: 170px;
+		width:130px;
 		font-size: 14px;
+		white-space:nowrap;
+		overflow: hidden;
 	}
 	.prix {
 
@@ -465,22 +445,72 @@ header a {
 	}
 
 }
-@media (min-width:1400px){
+@media (min-width:1100px){
+	.carte_ravioles:hover .sauce {
+		width: 50px;
+	}
 
+	.carte_ravioles:hover .ravioles {
+		width: 100px;
+	}
 	.carte_ravioles .sauce {
-		text-overflow: ellipsis;
-		width:220px;
-	
-		
+		width:100px;
 	}
 
 	.carte_ravioles .ravioles {
-		text-overflow: ellipsis;
-		width: 220px;}
+		width:160px;
+	}
+	.prix {
 
-		.prix {
-			bottom: 2px;
-		}
-
+		bottom: 2px;
+	}
 
 }
+
+@media (min-width: 1400px){
+	.carte_ravioles:hover .sauce {
+		width: 80px;
+	}
+
+	.carte_ravioles:hover .ravioles {
+		width:150px;
+	}
+	.carte_ravioles .sauce {
+		width:140px;
+	}
+
+	.carte_ravioles .ravioles {
+		width:190px;
+	}
+	.prix {
+
+		bottom: 2px;
+	}
+
+}
+
+@media (min-width: 1500px){
+	.carte_ravioles:hover .sauce {
+		width: 145px;
+	}
+
+	.carte_ravioles:hover .ravioles {
+		width:200px;
+	}
+	.carte_ravioles .sauce {
+		width:215px;
+	}
+
+	.carte_ravioles .ravioles {
+		width:240px;
+	}
+	.prix {
+
+		bottom: 2px;
+	}
+
+}
+
+
+
+
