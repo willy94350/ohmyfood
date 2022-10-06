@@ -238,10 +238,10 @@ header a {
 
 @keyframes effet {
 	0% {
-		transform: scale(0%);
+		transform: scale(0);
 	}
 	100% {
-		transform: scale(100%);
+		transform: scale(1.1);
 	}
 }
 
@@ -424,7 +424,7 @@ header a {
 		text-overflow: ellipsis;
 		width: 100px;
 		overflow: hidden;
-		white-space: white;
+		white-space:nowrap;
 		transition: 1s;
 	}
 	.carte_ravioles:hover .ravioles {
