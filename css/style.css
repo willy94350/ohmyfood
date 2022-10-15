@@ -113,7 +113,7 @@ main .lieu {
 	width: 27px;
 	position: absolute;
 	left: -63px;
-	bottom: -32px;
+	bottom: -25px;
 	transform: translate(50px, -50px);
 }
 
@@ -170,13 +170,15 @@ li:hover {
 
 .flex li {
 	margin-bottom: 20px;
-	width: 104%;
+	width:100%;
 	background-color: #ececec7a;
 }
 
 .flex li:nth-child(3) {
 	background-color: #8000802e;;
 }
+
+.flex{display: flex;}
 
 .carte_menu {
 	display: flex;
@@ -307,8 +309,7 @@ h2 {
 
 .titre_resto {
 	font-weight: bold;
-	margin-left: 33px;
-}
+	margin-left: 33px;}
 
 .new {
 	text-decoration: none;
@@ -452,7 +453,7 @@ h2 {
 	}
 
 	.bulle {
-		bottom: -32px;
+		bottom: -25px;
 	}
 
 	.fas.fa-mobile-alt {
@@ -470,7 +471,7 @@ h2 {
 
 @media (min-width: 972px) {
 	.carte {
-		width:98%;
+		width:44%;
 		margin:0 25px;
 	}
 	ol {
@@ -481,10 +482,18 @@ h2 {
 
 	.carte_menu {
 		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.flex li {
+		margin-bottom: 20px;
+		width: 30%;
+		background-color: #ececec7a;
 	}
 
 	.bulle {
-		bottom: -34px;
+		bottom: -27px;
 	}
 
 	.fas.fa-mobile-alt {
@@ -502,5 +511,14 @@ h2 {
 	.para_li {
 		position: relative;
 		top: 1px;
+		margin-left:-1%;
 	}
+
+	.fonctionnement {display:flex;
+		width: 100%;
+		flex-direction: row;
+		
+	}
+
+
 }
