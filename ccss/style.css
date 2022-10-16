@@ -282,7 +282,7 @@ header a {
 
 .carte_ravioles:hover .grand_texte {
 	text-overflow: ellipsis;
-	width: 75%;
+	width:70%;
 	transition: 1s;
 	overflow: hidden;
 	white-space: nowrap;
