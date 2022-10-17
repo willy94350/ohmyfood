@@ -64,7 +64,7 @@ main .lieu {
 	background-color: #f3f3f3;
 	text-align: center;
 	display: flex;
-	padding: 1px;
+	padding: 0px;
 	align-items: center;
 	gap: 10px;
 	justify-content: center;
@@ -81,7 +81,7 @@ main .lieu {
 .reserver h2 {
 	margin-top: 23px;
 	margin-left: 5px;
-	padding: 3px 95px;
+	padding: 3px 30px;
 }
 .reserver p {
 	font-size: 17px;
@@ -91,7 +91,7 @@ main .lieu {
 	color: white;
 	font-weight: 246;
 	font-size: 16px;
-	padding: 13px 30px;
+	padding: 13px 0px;
 	margin-top: 13px;
 	border-radius: 30px;
 	box-shadow: 2px 1px 16px -3px #000000;
@@ -174,8 +174,8 @@ li:hover {
 	background-color: #ececec7a;
 }
 
-.flex li:nth-child(3) {
-	background-color: #8000802e;;
+.flex li:nth-child(3):hover {
+	background-color: #8000802e;
 }
 
 .flex{display: flex;}
@@ -219,13 +219,10 @@ i.fas {
 ol {
 	list-style-type: none;
 	gap: 15px;
-	padding: 10px 2px;
+	padding: 10px 8%;
 	margin-bottom: -22px;
 }
 
-.fonction {
-	padding: 10px 25px;
-}
 
 h2 {
 	margin-bottom: 24px;

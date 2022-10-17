@@ -29,8 +29,10 @@ header a {
 	font-family: "shrikhand";
 	position: relative;
 	top: -1px;
-	margin-left: 29px;
-	font-size: 30px;
+	margin-left: 9px;
+	font-size: 28px;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .titre_menu {
@@ -178,6 +180,8 @@ header a {
 	width: 25px;
 }
 
+.lest{width:76%;}
+
 .carte_ravioles {
 	border-radius: 15px;
 	gap: 1px;
@@ -189,7 +193,7 @@ header a {
 	height: 74px;
 	padding-right: 0px;
 	box-shadow: 3px 3px 3px 3px lightgray;
-	margin: 0 31px;
+	margin: 0 26px;
 	width:85%;
 	max-width:400px;
 }
@@ -282,7 +286,15 @@ header a {
 
 .carte_ravioles:hover .grand_texte {
 	text-overflow: ellipsis;
-	width:70%;
+	width:75%;
+	transition: 1s;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.carte_ravioles .grand_texte {
+	text-overflow: ellipsis;
+	width:100%;
 	transition: 1s;
 	overflow: hidden;
 	white-space: nowrap;
@@ -293,6 +305,22 @@ header a {
 	text-overflow: ellipsis;
 	width: 70%;
 	transition: 1s;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.carte_ravioles .ravioles {
+	text-overflow: ellipsis;
+	width:97%;
+	transition: 1s;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.carte_ravioles .trop_long
+{
+	text-overflow: ellipsis;
+	width:104%;
 	overflow: hidden;
 	white-space: nowrap;
 }
@@ -351,6 +379,9 @@ header a {
 	position: relative;
 	z-index: 1;
 	margin-top: -26px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .image {
@@ -403,7 +434,7 @@ header a {
 
 	.carte_ravioles:hover .petit_texte {
 		text-overflow:ellipsis;
-		width:50%;
+		width:63%;
 		transition: 1s;
 		overflow: hidden;
 		white-space: nowrap;
@@ -476,6 +507,7 @@ header a {
 
 	.carte_ravioles:hover .grand_texte {
 		overflow:visible;
+		width: 100%;
 	
 	}
 	.carte_ravioles:hover .trop_long{
