@@ -121,6 +121,7 @@ main .lieu {
 	transform: scale(1.1);
 	filter: brightness(110%);
 	box-shadow: 5px 5px 5px 5px #00000073;
+	transition: 1s;
 }
 
 li {
@@ -174,8 +175,10 @@ li:hover {
 	background-color: #ececec7a;
 }
 
-.flex li:nth-child(3):hover {
+.flex li:hover {
 	background-color: #8000802e;
+	transition:1s;
+
 }
 
 .flex{display: flex;}
@@ -201,11 +204,11 @@ li:hover {
 .titre_section {
 	margin-top: 10px;
 	font-weight: bold;
-	margin-left: 20px;
+	margin-left:8%;
 }
 
 .titre {
-	margin-left: -35px;
+	margin-left:w-35px;
 }
 
 i.fas {
@@ -219,8 +222,9 @@ i.fas {
 ol {
 	list-style-type: none;
 	gap: 15px;
-	padding: 10px 8%;
 	margin-bottom: -22px;
+	width: 100%;
+	margin: 0 -2%;
 }
 
 
@@ -346,7 +350,7 @@ h2 {
 }
 .fa-solid.fa-heart:hover {
 	opacity: 1;
-	animation: effet 0.2s;
+	animation: effet 1s;
 }
 
 @keyframes effet {
@@ -354,7 +358,7 @@ h2 {
 		transform: scale(0);
 	}
 	100% {
-		transform: scale(1.1);
+		transform: scale(1);
 	}
 }
 
@@ -431,6 +435,8 @@ h2 {
 		flex-direction: row;
 		gap: 23px;
 		flex-wrap: wrap;
+		margin: 0 0%;
+		padding: 0 65px;
 	}
 
 	li {
@@ -481,6 +487,7 @@ h2 {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
+		padding: 0 6%;
 	}
 
 	.flex li {
@@ -514,6 +521,8 @@ h2 {
 	.fonctionnement {display:flex;
 		width: 100%;
 		flex-direction: row;
+		gap: 5%;
+		padding: 0 3%;
 		
 	}
 

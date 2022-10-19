@@ -29,7 +29,7 @@ header a {
 	font-family: "shrikhand";
 	position: relative;
 	top: -1px;
-	margin-left: 9px;
+	margin-left:26px;
 	font-size: 28px;
 	display: flex;
 	flex-wrap: wrap;
@@ -73,7 +73,7 @@ header a {
 
 .fa-solid.fa-heart:hover {
 	opacity: 1;
-	animation: effet 0.2s ease-in-out;
+	animation: effet 1s ease-in-out;
 	animation-fill-mode: forwards;
 	transform-origin: middle;
 }
@@ -284,15 +284,15 @@ header a {
 	animation: slidedown 4s;
 }
 
-.carte_ravioles:hover .grand_texte {
+.carte_ravioles:hover .texte {
 	text-overflow: ellipsis;
-	width:75%;
+	width:70%;
 	transition: 1s;
 	overflow: hidden;
 	white-space: nowrap;
 }
 
-.carte_ravioles .grand_texte {
+.carte_ravioles .texte {
 	text-overflow: ellipsis;
 	width:100%;
 	transition: 1s;
@@ -300,14 +300,7 @@ header a {
 	white-space: nowrap;
 }
 
-.carte_ravioles:hover .trop_long
-{
-	text-overflow: ellipsis;
-	width: 70%;
-	transition: 1s;
-	overflow: hidden;
-	white-space: nowrap;
-}
+
 
 .carte_ravioles .ravioles {
 	text-overflow: ellipsis;
@@ -317,35 +310,14 @@ header a {
 	white-space: nowrap;
 }
 
-.carte_ravioles .trop_long
-{
-	text-overflow: ellipsis;
-	width:104%;
-	overflow: hidden;
-	white-space: nowrap;
-}
 
-.grand_texte {
+.texte {
 	margin-left: 10px;
 	margin-top: -8px;
 }
-
-.trop_long{
-	margin-left: 10px;
-	margin-top: -8px;
-}
-
-
 .ravioles {
 	font-weight: bold;
 	margin-left: 9px;
-}
-
-.petit_texte {
-	display: flex;
-	justify-content: space-between;
-	margin-left: 10px;
-	margin-top: -8px;
 }
 
 .prix_entre {
@@ -361,9 +333,9 @@ header a {
 	padding: 10px 30px;
 	border-radius: 30px;
 	box-shadow: 2px 1px 16px -3px #000000;
-	width: 67%;
+	width: 79%;
 	margin-top: 40px;
-	height: 73px;
+	height: 65px;
 	border: none;
 	background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
 }
@@ -401,89 +373,9 @@ header a {
 .commander button:hover {
 	transform: scale(1);
 	filter: brightness(110%);
+	transition: 1s;
 	box-shadow: 5px 5px 5px 5px #00000073;
 	padding: 0;
-}
-
-@media(max-width:392px)
-{
-	.carte_ravioles:hover .grand_texte {
-		text-overflow:ellipsis;
-		width:30%;
-		transition: 1s;
-		overflow:hidden;
-		white-space: nowrap;
-	}
-	
-	.carte_ravioles:hover .trop_long
-	{
-		text-overflow:ellipsis;
-		width: 40%;
-		transition: 1s;
-		overflow: hidden;
-		white-space: nowrap;
-	}
-	.carte_ravioles .trop_long
-	{
-		text-overflow:ellipsis;
-		width: 40%;
-		transition: 1s;
-		overflow: hidden;
-		white-space: nowrap;
-	}
-
-	.carte_ravioles:hover .petit_texte {
-		text-overflow:ellipsis;
-		width:63%;
-		transition: 1s;
-		overflow: hidden;
-		white-space: nowrap;
-	}
-
-	.carte_ravioles .petit_texte {
-		text-overflow: ellipsis;
-		width:100%;
-		transition: 1s;
-		overflow: hidden;
-		white-space: nowrap;
-	}
-	
-	.carte_ravioles .grand_texte
-	{
-		text-overflow: ellipsis;
-		width:75%;
-		transition: 1s;
-		overflow: hidden;
-		white-space: nowrap;
-	}
-
-	.carte_ravioles:hover .ravioles
-	{
-		text-overflow: ellipsis;
-		width:98%;
-		transition: 1s;
-		overflow:hidden;
-		white-space: nowrap;
-	}
-	.carte_ravioles .ravioles
-	{
-		text-overflow: ellipsis;
-		width:97%;
-		transition: 1s;
-		overflow: hidden;
-		white-space: nowrap;
-	}
-}
-
-
-
-
-@media (min-width:470px)
- {
-.carte_ravioles:hover .grand_texte{overflow:hidden;
-	width: 80%;
-	text-overflow: ellipsis;}
-
 }
 
 @media (min-width: 768px) {
@@ -505,15 +397,11 @@ header a {
 		width: 86px;
 	}
 
-	.carte_ravioles:hover .grand_texte {
-		overflow:visible;
-		width: 100%;
-	
-	}
-	.carte_ravioles:hover .trop_long{
+	.carte_ravioles:hover .texte {
 		overflow:visible;
 	}
 
+	
 }
 
 @media (min-width: 992px) {
@@ -547,4 +435,17 @@ header a {
 	}
 }
 
+@media (max-width:360px)
+{
+	.carte_ravioles:hover .texte {
+	width:60%;
+	
+}
 
+.carte_ravioles .texte {
+	text-overflow: ellipsis;
+
+}
+
+
+}
