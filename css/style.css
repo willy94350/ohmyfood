@@ -171,17 +171,18 @@ li:hover {
 
 .flex li {
 	margin-bottom: 20px;
-	width:95%;
+	width: 95%;
 	background-color: #ececec7a;
 }
 
 .flex li:hover {
 	background-color: #8000802e;
-	transition:1s;
-
+	transition: 1s;
 }
 
-.flex{display: flex;}
+.flex {
+	display: flex;
+}
 
 .carte_menu {
 	display: flex;
@@ -204,11 +205,11 @@ li:hover {
 .titre_section {
 	margin-top: 10px;
 	font-weight: bold;
-	margin-left:8%;
+	margin-left: 8%;
 }
 
 .titre {
-	margin-left:w-35px;
+	margin-left: w-35px;
 }
 
 i.fas {
@@ -226,7 +227,6 @@ ol {
 	width: 100%;
 	margin: 0 -2%;
 }
-
 
 h2 {
 	margin-bottom: 24px;
@@ -310,7 +310,8 @@ h2 {
 
 .titre_resto {
 	font-weight: bold;
-	margin-left: 33px;}
+	margin-left: 33px;
+}
 
 .new {
 	text-decoration: none;
@@ -337,7 +338,7 @@ h2 {
 	right: 1px;
 	opacity: 0;
 	padding: 10px;
-	background-image: radial-gradient( red, blue);
+	background-image: radial-gradient(red, blue);
 	top: 11px;
 }
 
@@ -449,8 +450,8 @@ h2 {
 	}
 
 	.para_li {
-		position:relative;
-		top:1px;
+		position: relative;
+		top: 1px;
 		white-space: nowrap;
 		margin-left: -21px;
 	}
@@ -468,14 +469,14 @@ h2 {
 	}
 
 	.fas.fa-store {
-		top:35px;
+		top: 35px;
 	}
 }
 
 @media (min-width: 972px) {
 	.carte {
-		width:44%;
-		margin:0 25px;
+		width: 44%;
+		margin: 0 25px;
 	}
 	ol {
 		display: flex;
@@ -515,16 +516,14 @@ h2 {
 	.para_li {
 		position: relative;
 		top: 1px;
-		margin-left:-1%;
+		margin-left: -1%;
 	}
 
-	.fonctionnement {display:flex;
+	.fonctionnement {
+		display: flex;
 		width: 100%;
 		flex-direction: row;
 		gap: 5%;
 		padding: 0 3%;
-		
 	}
-
-
 }
