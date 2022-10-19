@@ -209,7 +209,7 @@ li:hover {
 }
 
 .titre {
-	margin-left: w-35px;
+	margin-left: -35px;
 }
 
 i.fas {
@@ -230,7 +230,7 @@ ol {
 
 h2 {
 	margin-bottom: 24px;
-	margin-left: 10%;
+	margin-left: 2%;
 }
 
 .carte img {
@@ -525,5 +525,9 @@ h2 {
 		flex-direction: row;
 		gap: 5%;
 		padding: 0 3%;
+	}
+
+	.titre_section {
+		margin-left: 2%;
 	}
 }
