@@ -47,6 +47,8 @@ header a {
 	margin-bottom: 19px;
 	margin-left: 27px;
 	width: 40px;
+	font-size: 16px;
+	font-weight: normal;
 }
 
 .fa-solid.fa-heart {
@@ -59,7 +61,7 @@ header a {
 	top: 16px;
 	opacity: 0;
 	padding: 10px;
-	background-image: radial-gradient(red, blue);
+	background-image: linear-gradient(0deg, #ff79da, #9356dc);
 }
 
 .fa-regular.fa-heart {
@@ -131,6 +133,9 @@ header a {
 	height: 83px;
 	border-radius: 0 10px 10px 0;
 }
+.bouton {
+	position: relative;
+}
 
 .fa-solid.fa-check {
 	margin-left: 37%;
@@ -138,7 +143,8 @@ header a {
 	color: #99e2d0;
 	border-radius: 50%;
 	padding: 4%;
-	margin-top: 29%;
+	position: absolute;
+	top: 26px;
 }
 
 .prix {
@@ -163,7 +169,7 @@ header a {
 .pied {
 	display: flex;
 	flex-direction: column;
-	background-color: #3f3232;
+	background-color: #292828;
 	color: white;
 	align-items: flex-start;
 	padding-top: 0%;
@@ -334,7 +340,7 @@ header a {
 	margin-top: 40px;
 	height: 65px;
 	border: none;
-	background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+	background-image: linear-gradient(352deg, #9356dc, #ff79da);
 }
 
 .pied p {
@@ -442,5 +448,18 @@ header a {
 
 	.titre h2 {
 		margin-left: -13px;
+	}
+
+	.carte_ravioles:hover .fa-solid.fa-check {
+		transform: rotate(1turn);
+		transition: 2s;
+	}
+
+	.fa-solid.fa-check {
+		position: absolute;
+		top: 26px;
+	}
+	.bouton {
+		position: relative;
 	}
 }
